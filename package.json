@@ -1,0 +1,25 @@
+{
+  "name": "vserebryansky",
+  "version": "1.0.0",
+  "description": "person folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shtokar/vserebryansky.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shtokar/vserebryansky/issues"
+  },
+  "homepage": "https://github.com/shtokar/vserebryansky#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
