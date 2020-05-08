@@ -418,10 +418,19 @@ phone {
   justify-content: center;
   align-items: center; }
   .instagram_link {
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
     color: #ecba4e;
     text-decoration: none;
-    transform: rotate(90deg); }
+    transform: rotate(90deg);
+    line-height: 0.8; }
+    .instagram_link::after {
+      content: '';
+      width: 50px;
+      height: 1px;
+      background-color: #ecba4e;
+      margin-left: 8px; }
 
 .title {
   margin: 0;
