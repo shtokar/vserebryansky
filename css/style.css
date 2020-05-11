@@ -354,47 +354,60 @@ template {
 
 .header {
   background-color: #131313;
-  padding: 24px 0;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 99; }
+  z-index: 99;
+  margin-right: 0;
+  border: 1px red solid; }
 
 .menu {
+  border: 1px yellow solid;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin-left: -19px;
+  margin-right: -30px; }
   .menu_logo {
     font-size: 1rem; }
 
 .logo {
   color: #ecba4e;
   text-transform: uppercase;
-  margin-right: 5.857rem;
-  min-width: 12.785rem; }
+  font-weight: 500;
+  font-family: 'Futura Demi';
+  border: 1px white;
+  margin-right: 70px; }
 
-.nav_item {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  margin-right: 2.857rem;
-  transition: 0.2s; }
-  .nav_item_one {
-    color: #ecba4e; }
-  .nav_item:hover {
-    color: #ecba4e; }
+.nav {
+  border: blue 1px solid;
+  display: flex;
+  justify-content: start;
+  align-items: center; }
+  .nav_item {
+    font-family: 'Futura Book';
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border: grey solid 1px;
+    margin-right: 40px; }
+    .nav_item_one {
+      color: #ecba4e; }
+    .nav_item:hover {
+      color: #ecba4e; }
 
 .phone {
   color: #ecba4e;
   font-weight: 500; }
 
-.contacts_phone {
-  margin-right: 3.071rem; }
-
-.contacts_button {
-  min-width: 11.6rem;
-  font-size: 0.96rem; }
+.contacts {
+  border: 1px green solid; }
+  .contacts_phone {
+    margin-right: 3.214rem; }
+  .contacts_button {
+    font-size: 0.96rem; }
 
 .hero {
   background: url("../img/hero1-bg.jpg") no-repeat #131313 center/cover;
@@ -436,10 +449,11 @@ template {
     font-size: 0.94rem; }
   .hero_instagram {
     position: absolute;
-    max-width: 80px;
+    max-width: 85px;
     height: 100%;
     left: 0;
-    top: 0; }
+    top: 0;
+    margin-top: 0; }
   .hero_scroll-down {
     position: absolute;
     left: 0;
@@ -461,7 +475,8 @@ template {
       height: 30px;
       border: 1px solid #ecba4e;
       border-radius: 50%;
-      margin-left: 12px;
+      margin-left: 1.142rem;
+      font-size: 0.857rem;
       background: url("../img/arrow-down.svg") no-repeat center; }
 
 .instagram {
