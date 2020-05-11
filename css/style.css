@@ -359,11 +359,9 @@ template {
   top: 0;
   width: 100%;
   z-index: 99;
-  margin-right: 0;
-  border: 1px red solid; }
+  margin-right: 0; }
 
 .menu {
-  border: 1px yellow solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -378,10 +376,9 @@ template {
   font-weight: 500;
   font-family: 'Futura Demi';
   border: 1px white;
-  margin-right: 70px; }
+  margin-right: 5rem; }
 
 .nav {
-  border: blue 1px solid;
   display: flex;
   justify-content: start;
   align-items: center; }
@@ -391,8 +388,7 @@ template {
     color: #fff;
     text-transform: uppercase;
     transition: 0.2s;
-    border: grey solid 1px;
-    margin-right: 40px; }
+    margin-right: 3.071rem; }
     .nav_item_one {
       color: #ecba4e; }
     .nav_item:hover {
@@ -402,12 +398,11 @@ template {
   color: #ecba4e;
   font-weight: 500; }
 
-.contacts {
-  border: 1px green solid; }
-  .contacts_phone {
-    margin-right: 3.214rem; }
-  .contacts_button {
-    font-size: 0.96rem; }
+.contacts_phone {
+  margin-right: 3.214rem; }
+
+.contacts_button {
+  font-size: 0.96rem; }
 
 .hero {
   background: url("../img/hero1-bg.jpg") no-repeat #131313 center/cover;
@@ -441,8 +436,8 @@ template {
     margin-bottom: 2.93rem;
     margin-top: 1.35rem; }
   .hero_button {
-    margin-right: 18px;
-    padding: auto 35px;
+    margin-right: 1.285rem;
+    padding: auto 2.5rem;
     min-height: 3.64rem;
     min-width: 14.7rem;
     margin-top: 0.5rem;
@@ -540,6 +535,9 @@ body {
     margin-right: 1rem; } }
 
 @media screen and (max-width: 992px) {
+  .menu {
+    margin-left: 0;
+    margin-right: 0; }
   .nav {
     display: none; }
   .hero_instagram {
@@ -548,6 +546,10 @@ body {
     margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
+  .header {
+    min-height: 56px;
+    display: flex;
+    align-items: center; }
   .contacts_button {
     display: none; }
   .contacts_phone {
@@ -560,13 +562,19 @@ body {
     display: none; }
   .hero_content {
     min-width: 22.86rem; }
+  .hero_title {
+    max-width: 339px;
+    font-size: 23px; }
   .hero_text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
+    font-size: 1.5rem;
+    margin-bottom: 2.28rem;
+    max-width: 320px; }
   .hero_button {
     display: block;
-    min-width: 26.66rem;
-    margin-bottom: 1.85rem; } }
+    min-width: 28.16rem;
+    margin-bottom: 1.85rem; }
+  .menu_logo {
+    margin-right: 56px; } }
 
 @media screen and (max-height: 600px) {
   .hero_scroll-down {
