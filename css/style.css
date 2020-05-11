@@ -387,7 +387,11 @@ template {
   color: #ecba4e; }
 
 .contacts_phone {
-  margin-right: 45px; }
+  margin-right: 3.071rem; }
+
+.contacts_button {
+  min-width: 11.6rem;
+  font-size: 0.96rem; }
 
 .hero {
   background: url("../img/hero1-bg.jpg") no-repeat #131313 center/cover;
@@ -412,19 +416,21 @@ template {
     position: relative;
     margin-left: 4.28rem; }
   .hero_title {
-    margin-bottom: 1rem; }
+    line-height: 3.73rem; }
   .hero_text {
     font-family: 'Futura Book', sans-serif;
     font-size: 1.57rem;
     max-width: 500px;
-    line-height: 30px;
-    margin: 0;
-    margin-bottom: 3rem;
-    font-style: normal;
-    font-weight: normal; }
+    line-height: 2.14rem;
+    margin-bottom: 2.93rem;
+    margin-top: 1.35rem; }
   .hero_button {
-    margin-right: 20px;
-    padding: 20px 35px; }
+    margin-right: 18px;
+    padding: auto 35px;
+    min-height: 3.64rem;
+    min-width: 14.7rem;
+    margin-top: 0.5rem;
+    font-size: 0.94rem; }
   .hero_instagram {
     position: absolute;
     max-width: 80px;
@@ -544,6 +550,6 @@ body {
     min-width: 26.66rem;
     margin-bottom: 1.85rem; } }
 
-@media screen and (max-height: 515px) {
+@media screen and (max-height: 600px) {
   .hero_scroll-down {
     display: none; } }
