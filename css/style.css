@@ -319,11 +319,11 @@ template {
   display: none; }
 
 .button {
-  padding: 13px 20px;
+  padding: 11px 24px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
-  font-size: 0,94rem; }
+  font-size: 0,93rem; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
@@ -365,6 +365,8 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .menu_logo {
+    font-size: 1rem; }
 
 .logo {
   color: #ecba4e;
@@ -374,12 +376,14 @@ template {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  margin-right: 2,85rem;
+  margin-right: 2.85rem;
   transition: 0.2s; }
+  .nav_item_one {
+    color: #ecba4e; }
   .nav_item:hover {
     color: #ecba4e; }
 
-phone {
+.phone {
   color: #ecba4e; }
 
 .contacts_phone {
@@ -404,14 +408,23 @@ phone {
     background-color: rgba(19, 19, 19, 0.7);
     position: absolute; }
   .hero_content {
-    max-width: 47,85rem;
+    max-width: 47.85rem;
     position: relative;
-    margin-left: 4,28rem; }
+    margin-left: 4.28rem; }
+  .hero_title {
+    margin-bottom: 1rem; }
   .hero_text {
-    font-size: 1,57rem;
-    max-width: 500px; }
+    font-family: 'Futura Book', sans-serif;
+    font-size: 1.57rem;
+    max-width: 500px;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 3rem;
+    font-style: normal;
+    font-weight: normal; }
   .hero_button {
-    margin-right: 20px; }
+    margin-right: 20px;
+    padding: 20px 35px; }
   .hero_instagram {
     position: absolute;
     max-width: 80px;
@@ -430,7 +443,9 @@ phone {
     align-items: center;
     text-transform: uppercase;
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: 'Yeseva One';
+    font-size: 0.857rem; }
     .hero_scroll-down::after {
       content: '';
       width: 30px;
@@ -452,7 +467,8 @@ phone {
     color: #ecba4e;
     text-decoration: none;
     transform: rotate(90deg);
-    line-height: 0.8; }
+    line-height: 0.8;
+    font-size: 1.1rem; }
     .instagram_link::after {
       content: '';
       width: 50px;
@@ -464,7 +480,7 @@ phone {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 2,857rem; }
+  font-size: 2.857rem; }
   .title--primary {
     color: #ecba4e; }
 
@@ -525,9 +541,9 @@ body {
     margin-bottom: 2.28rem; }
   .hero_button {
     display: block;
-    min-width: 22.86rem;
+    min-width: 26.66rem;
     margin-bottom: 1.85rem; } }
 
-@media screen and (max-height: 520px) {
-  .hero_scrolldown {
+@media screen and (max-height: 515px) {
+  .hero_scroll-down {
     display: none; } }
