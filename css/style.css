@@ -370,13 +370,15 @@ template {
 
 .logo {
   color: #ecba4e;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-right: 5.857rem;
+  min-width: 12.785rem; }
 
 .nav_item {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  margin-right: 2.85rem;
+  margin-right: 2.857rem;
   transition: 0.2s; }
   .nav_item_one {
     color: #ecba4e; }
@@ -384,7 +386,8 @@ template {
     color: #ecba4e; }
 
 .phone {
-  color: #ecba4e; }
+  color: #ecba4e;
+  font-weight: 500; }
 
 .contacts_phone {
   margin-right: 3.071rem; }
