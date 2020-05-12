@@ -1,3 +1,8 @@
+@media screen and (max-width: 1500px)
+    .contacts
+        &_button
+            margin-right: 1.5rem
+
 @media screen and (max-width: 1260px)
     html
         font-size: 13px
@@ -40,6 +45,8 @@
         font-size: 0.95rem
     .contacts
         &_phone
+            margin-right: 0.5rem
+        &_button
             margin-right: 1rem
 
 
@@ -73,7 +80,8 @@
     .header        
         display: flex
         justify-content: space-between
-        align-items: center    
+        align-items: center
+        min-height: 48px
 
     .contacts
         &_button
@@ -87,42 +95,65 @@
         line-height: 132%
         margin-bottom: 1.3rem
     .container
-        margin-left: 1.5rem
+        margin-left: 1rem
     .hero
-        height: 500px
+        height: auto
         &_scroll-down
             display: none
         &_content
-            min-width: 97%
-            margin-left: 1.5rem
+            width: 90%
+            margin-left: 1rem
             padding-left: 0
         &_title
-            max-width: 100%
-            font-size: 23px
-            margin-bottm: 1.33rem
+            width: 100%
+            font-size: 1.93rem
+            margin-bottom: 16px
+            margin-top: 49px
         &_text
             font-size: 1.5rem
             margin-bottom: 2.66rem
-            max-width: 100%
+            width: 95%
             line-height: 135%
         &_button
             display: block
-            width: 97% 
             margin-bottom: 2.16rem
-            font-size: 1.083rem
+            font-size: 1.084rem
             min-height: 4.25rem
+            min-width: 250px
                 
     .menu
-        margin-left: 1.5rem
+        margin-left: 1.1rem
+        font-weight: 500
         &_logo
-            margin-right: 0
+            margin-right: 2rem
             margin-left: 0
         &_phone
-            margin-right: 1.5rem
+            margin-left: 0
+
+@media screen and (max-width: 420px)
+    .hero
+        &_content
+            width: 100%
+            margin-left: 1rem
+            padding-left: 0
+        &_title
+            width: 100%
+            font-size: 1.93rem
+            margin-bottom: 16px
+            margin-top: 49px
+        &_text
+            font-size: 1.5rem
+            margin-bottom: 2.66rem
+            width: 95%
+            line-height: 135%
+        &_button
+            display: block
+            widht: 100%
+ 
+            
     
 @media screen and (max-width: 320px)    
     .header
-        min-height: 4.666rem
         display: flex
         justify-content: space-between
         align-items: center   
@@ -146,12 +177,12 @@
             display: none
         &_content
             min-width: 97%
-            margin-left: 1.5rem
+            margin-left: 1rem
             padding-left: 0
         &_title
             max-width: 100%
             font-size: 23px
-            margin-bottm: 1.33rem
+            margin-bottom: 1.33rem
         &_text
             font-size: 1.5rem
             margin-bottom: 2.66rem
@@ -165,17 +196,23 @@
             min-height: 4.25rem
                 
     .menu
-        margin-left: 1.5rem
+        margin-left: 1rem
         &_logo
             margin-right: 0
             margin-left: 0
         &_phone
-            margin-right: 1.5rem
+            margin-right: 1rem
 
-@media screen and (max-height: 580px)
+@media screen and (max-height: 500px)
     .hero
         &_scroll-down
             display: none
+
+@media screen and (max-height: 750px)
+    .hero
+        &_scroll-down
+            min-width: 15rem
+            min-height: 5rem
 
 
 
