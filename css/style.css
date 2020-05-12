@@ -323,7 +323,9 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
-  font-size: 0,93rem; }
+  font-size: 0,93rem;
+  outline: none;
+  font-weight: 500; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
@@ -359,38 +361,38 @@ template {
   top: 0;
   width: 100%;
   z-index: 99;
-  margin-right: 0;
-  padding: 1.9rem 0;
-  border: 1px yellow solid; }
+  border: 1px yellow solid;
+  padding: 1.71rem; }
+
+.container {
+  width: 85%;
+  max-width: 1256px;
+  margin: auto; }
 
 .menu {
   border: 1px red solid;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-left: 0; }
+  align-items: center; }
   .menu_logo {
-    font-size: 1rem; }
+    font-size: 1.075rem; }
 
 .logo {
   color: #e3b873;
   text-transform: uppercase;
   font-weight: 500;
   font-family: 'Futura Demi';
-  border: 1px white;
-  margin-right: 1rem; }
+  border: 1px white; }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  display: block; }
   .nav_item {
-    font-family: 'Futura Book';
     text-decoration: none;
-    color: #fff;
     text-transform: uppercase;
-    transition: 0.2s;
-    margin-right: 2.757rem; }
+    margin-right: 2.5rem;
+    transition: color 0.2s;
+    font-family: 'Futura Book';
+    color: #fff; }
     .nav_item_one {
       color: #e3b873; }
     .nav_item:hover {
@@ -401,10 +403,9 @@ template {
   font-weight: 500; }
 
 .contacts {
-  border: 1px white solid;
-  margin-left: -4rem; }
+  border: 1px white solid; }
   .contacts_phone {
-    margin-right: 3rem; }
+    margin-right: 3.214rem; }
   .contacts_button {
     font-size: 0.95rem; }
 
@@ -450,7 +451,7 @@ template {
     font-size: 0.94rem; }
   .hero_instagram {
     position: absolute;
-    max-width: 85px;
+    max-width: 6.071rem;
     height: 100%;
     left: 0;
     top: 0;
@@ -538,13 +539,13 @@ body {
   html {
     font-size: 12px; }
   .menu {
+    width: 100%;
     margin-left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    font-size: 1rem; }
     .menu_logo {
-      margin-right: auto;
-      border: orange solid 1px; }
+      margin-right: auto; }
+  .hero_instagram {
+    max-width: 3rem; }
   .nav {
     border: grey solid 1px; }
     .nav_item {
@@ -579,6 +580,8 @@ body {
     font-size: 1.64rem;
     line-height: 132%;
     margin-bottom: 1.3rem; }
+  .container {
+    margin-left: 18px; }
   .hero {
     max-height: 39.666rem; }
     .hero_scroll-down {

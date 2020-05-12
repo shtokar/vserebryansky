@@ -5,18 +5,23 @@
     top: 0
     width: 100%
     z-index: 99
-    margin-right: 0
-    padding: 1.9rem 0
     border: 1px yellow solid
+    padding: 1.71rem 
+    
+.container 
+    width: 85%
+    max-width: 1256px
+    margin: auto
 
+    
+    
 .menu
     border: 1px red solid
     display: flex
     justify-content: space-between
     align-items: center
-    margin-left: 0
     &_logo
-        font-size: 1rem
+        font-size: 1.075rem
 
 .logo 
     color: $primary
@@ -24,20 +29,19 @@
     font-weight: 500
     font-family: 'Futura Demi'
     border: 1px white 
-    margin-right: 1rem
+    margin-right: 
 
 
 .nav 
-    display: flex
-    justify-content: space-between
-    align-items: center
+    display: block
     &_item
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-right: 2.5rem;
+        transition: color 0.2s;
         font-family: 'Futura Book'
-        text-decoration: none
         color: $light
-        text-transform: uppercase
-        transition: 0.2s
-        margin-right: 2.757rem
+        
         &_one
             color: $primary 
         &:hover
@@ -50,9 +54,9 @@
 
 .contacts
     border: 1px white solid
-    margin-left: -4rem
+    margin-left: 
     &_phone
-        margin-right: 3rem
+        margin-right: 3.214rem
     &_button
         &--primary
         font-size: 0.95rem
