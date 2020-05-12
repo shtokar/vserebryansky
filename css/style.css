@@ -596,8 +596,8 @@ body {
     justify-content: space-between;
     align-items: center;
     max-height: 3rem; }
-  body {
-    max-height: 550px; }
+  main {
+    max-height: 475px; }
   .contacts_button {
     display: none; }
   .contacts_phone {
