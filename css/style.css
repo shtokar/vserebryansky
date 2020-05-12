@@ -360,14 +360,15 @@ template {
   width: 100%;
   z-index: 99;
   margin-right: 0;
-  padding: 2rem 0; }
+  padding: 1.9rem 0;
+  border: 1px yellow solid; }
 
 .menu {
+  border: 1px red solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: -1.357rem;
-  margin-right: 0; }
+  margin-left: 0; }
   .menu_logo {
     font-size: 1rem; }
 
@@ -377,11 +378,11 @@ template {
   font-weight: 500;
   font-family: 'Futura Demi';
   border: 1px white;
-  margin-right: 5.81rem; }
+  margin-right: 1rem; }
 
 .nav {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center; }
   .nav_item {
     font-family: 'Futura Book';
@@ -389,7 +390,7 @@ template {
     color: #fff;
     text-transform: uppercase;
     transition: 0.2s;
-    margin-right: 2.857rem; }
+    margin-right: 2.757rem; }
     .nav_item_one {
       color: #e3b873; }
     .nav_item:hover {
@@ -399,11 +400,13 @@ template {
   color: #e3b873;
   font-weight: 500; }
 
-.contacts_phone {
-  margin-right: 3.114rem; }
-
-.contacts_button {
-  font-size: 0.95rem; }
+.contacts {
+  border: 1px white solid;
+  margin-left: -4rem; }
+  .contacts_phone {
+    margin-right: 3rem; }
+  .contacts_button {
+    font-size: 0.95rem; }
 
 .hero {
   background: url("../img/hero1-bg.jpg") no-repeat #131313 center/cover;
@@ -534,13 +537,26 @@ body {
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
-  .nav_item {
-    margin-right: 1rem; } }
+  .menu {
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .menu_logo {
+      margin-right: auto;
+      border: orange solid 1px; }
+  .nav {
+    border: grey solid 1px; }
+    .nav_item {
+      margin-left: 0; }
+  .contacts {
+    padding: 0 auto; }
+    .contacts_button--primary {
+      font-size: 1rem; } }
 
 @media screen and (max-width: 992px) {
   .menu {
-    margin-left: 0;
-    margin-right: 0; }
+    margin-left: 0; }
   .nav {
     display: none; }
   .hero_instagram {

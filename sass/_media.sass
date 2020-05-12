@@ -1,16 +1,36 @@
 @media screen and (max-width: 1200px)
     html
         font-size: 12px
-    .nav
+    .menu
+        margin-left: 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &_logo
+            margin-right: auto
+            border: orange solid 1px
+            
+       
+    .nav 
+        border: grey solid 1px
+
         &_item
-            margin-right: 1rem
+            margin-right: 
+            margin-left: 0
+    .contacts
+        margin-left: 
+        padding: 0 auto
+        &_phone
+            margin-left: 
+        &_button
+            &--primary
+                font-size: 1rem
 
 @media screen and (max-width: 992px)
     .menu
         margin-left: 0
-        margin-right: 0
     .nav
-        display: none
+        display: none 
     .hero
         &_instagram
             display: none
