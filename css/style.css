@@ -518,7 +518,8 @@ template {
   box-sizing: border-box; }
 
 html {
-  font-size: 14px; }
+  font-size: 14px;
+  min-widht: 320px; }
 
 img {
   max-widht: 100%; }
@@ -691,6 +692,6 @@ body {
     .menu_phone {
       margin-right: 1.5rem; } }
 
-@media screen and (max-height: 550px) {
+@media screen and (max-height: 580px) {
   .hero_scroll-down {
     display: none; } }
