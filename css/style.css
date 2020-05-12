@@ -590,6 +590,8 @@ body {
     font-size: 0.8rem; } }
 
 @media screen and (max-width: 570px) {
+  body {
+    min-widht: 370px; }
   .header {
     min-height: 4.666rem;
     display: flex;
@@ -598,6 +600,8 @@ body {
     max-height: 3rem; }
   main {
     max-height: 475px; }
+  img {
+    max-width: inherit; }
   .contacts_button {
     display: none; }
   .contacts_phone {
