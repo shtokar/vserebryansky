@@ -359,14 +359,15 @@ template {
   top: 0;
   width: 100%;
   z-index: 99;
-  margin-right: 0; }
+  margin-right: 0;
+  padding: 2rem 0; }
 
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: -19px;
-  margin-right: -30px; }
+  margin-left: -1.357rem;
+  margin-right: 0; }
   .menu_logo {
     font-size: 1rem; }
 
@@ -376,7 +377,7 @@ template {
   font-weight: 500;
   font-family: 'Futura Demi';
   border: 1px white;
-  margin-right: 5rem; }
+  margin-right: 5.81rem; }
 
 .nav {
   display: flex;
@@ -388,7 +389,7 @@ template {
     color: #fff;
     text-transform: uppercase;
     transition: 0.2s;
-    margin-right: 3.071rem; }
+    margin-right: 2.857rem; }
     .nav_item_one {
       color: #ecba4e; }
     .nav_item:hover {
@@ -399,10 +400,10 @@ template {
   font-weight: 500; }
 
 .contacts_phone {
-  margin-right: 3.214rem; }
+  margin-right: 3.114rem; }
 
 .contacts_button {
-  font-size: 0.96rem; }
+  font-size: 0.95rem; }
 
 .hero {
   background: url("../img/hero1-bg.jpg") no-repeat #131313 center/cover;
