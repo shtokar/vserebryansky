@@ -415,6 +415,7 @@ template {
 
 .hero {
   background: url("../img/hero1-bg.jpg") no-repeat #131313 center/cover;
+  background-repeat: inherit;
   height: 100vh;
   color: #fff;
   position: relative;
@@ -519,9 +520,13 @@ template {
 html {
   font-size: 14px; }
 
+img {
+  max-widht: 100%; }
+
 body {
   font-family: 'Futura Book', sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  min-width: 320px; }
 
 .section-title {
   text-align: center;
@@ -590,18 +595,14 @@ body {
     font-size: 0.8rem; } }
 
 @media screen and (max-width: 570px) {
-  body {
-    min-widht: 370px; }
+  main {
+    min-widht: 320px; }
   .header {
     min-height: 4.666rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-height: 3rem; }
-  main {
-    max-height: 475px; }
-  img {
-    max-width: inherit; }
   .contacts_button {
     display: none; }
   .contacts_phone {
@@ -613,9 +614,9 @@ body {
     line-height: 132%;
     margin-bottom: 1.3rem; }
   .container {
-    margin-left: 18px; }
+    margin-left: 1.5rem; }
   .hero {
-    max-height: 39.666rem; }
+    height: 500px; }
     .hero_scroll-down {
       display: none; }
     .hero_content {
@@ -636,6 +637,58 @@ body {
       min-width: 28.16rem;
       margin-bottom: 2.16rem;
       font-size: 1.083rem;
+      min-height: 4.25rem; }
+  .menu {
+    margin-left: 1.5rem; }
+    .menu_logo {
+      margin-right: 0;
+      margin-left: 0; }
+    .menu_phone {
+      margin-right: 1.5rem; } }
+
+@media screen and (max-width: 320px) {
+  body {
+    min-widht: 320px; }
+  .header {
+    min-height: 4.666rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 3rem; }
+  .contacts_button {
+    display: none; }
+  .contacts_phone {
+    margin-right: 1rem;
+    color: #fff;
+    text-decoration: none; }
+  .title {
+    font-size: 1.64rem;
+    line-height: 132%;
+    margin-bottom: 1.3rem; }
+  .container {
+    margin-left: 1rem; }
+  .hero {
+    max-height: 39.666rem; }
+    .hero_scroll-down {
+      display: none; }
+    .hero_content {
+      min-width: 22.86rem;
+      margin-left: 1.5rem;
+      padding-left: 0; }
+    .hero_title {
+      max-width: 80%;
+      font-size: 23px;
+      margin-bottm: 1.33rem; }
+    .hero_text {
+      font-size: 1.5rem;
+      margin-bottom: 2.66rem;
+      max-width: 80%;
+      line-height: 135%; }
+    .hero_button {
+      display: block;
+      min-width: 83%;
+      margin-bottom: 2.16rem;
+      font-size: 1.1rem;
       min-height: 4.25rem; }
   .menu {
     margin-left: 1.5rem; }

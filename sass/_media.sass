@@ -69,20 +69,15 @@
             max-widht: 70px
             font-size: 0.8rem
 
-@media screen and (max-width: 570px)
-    body
-        min-widht: 370px
+@media screen and (max-width: 570px) 
+    main
+        min-widht: 320px   
     .header
         min-height: 4.666rem
         display: flex
         justify-content: space-between
         align-items: center
-        max-height: 3rem
-    main
-        max-height: 475px
-    img
-        max-width: inherit
-     
+        max-height: 3rem     
 
     .contacts
         &_button
@@ -96,9 +91,9 @@
         line-height: 132%
         margin-bottom: 1.3rem
     .container
-        margin-left: 18px
+        margin-left: 1.5rem
     .hero
-        max-height: 39.666rem
+        height: 500px
         &_scroll-down
             display: none
         &_content
@@ -129,6 +124,60 @@
         &_phone
             margin-right: 1.5rem
     
+@media screen and (max-width: 320px)    
+    body
+        min-widht: 320px
+    .header
+        min-height: 4.666rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-height: 3rem     
+
+    .contacts
+        &_button
+            display: none
+        &_phone
+            margin-right: 1rem
+            color: $light
+            text-decoration: none
+    .title
+        font-size: 1.64rem
+        line-height: 132%
+        margin-bottom: 1.3rem
+    .container
+        margin-left: 1rem
+    .hero
+        max-height: 39.666rem
+        &_scroll-down
+            display: none
+        &_content
+            min-width: 22.86rem
+            margin-left: 1.5rem
+            padding-left: 0
+        &_title
+            max-width: 80%
+            font-size: 23px
+            margin-bottm: 1.33rem
+        &_text
+            font-size: 1.5rem
+            margin-bottom: 2.66rem
+            max-width: 80%
+            line-height: 135%
+        &_button
+            display: block
+            min-width: 83%
+            margin-bottom: 2.16rem
+            font-size: 1.1rem
+            min-height: 4.25rem
+                
+    .menu
+        margin-left: 1.5rem
+        &_logo
+            margin-right: 0
+            margin-left: 0
+        &_phone
+            margin-right: 1.5rem
 
 @media screen and (max-height: 550px)
     .hero
