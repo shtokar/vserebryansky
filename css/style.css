@@ -524,18 +524,21 @@ body {
   min-width: 375px;
   max-widht: 1450px; }
 
+img {
+  max-widht: 100%; }
+
 .container {
   widht: 100%; }
 
-.section {
+.section-title {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Yeseva One', cursive; }
-  .section_image {
+  .section-title_image {
     display: flex;
     align-items: center;
     justify-content: center; }
-    .section_image::after, .section_image::before {
+    .section-title_image::after, .section-title_image::before {
       content: '';
       width: 32px;
       height: 2px;
@@ -732,3 +735,53 @@ body {
   .hero_scroll-down {
     min-width: 15rem;
     min-height: 5rem; } }
+
+.types_section-title {
+  margin-bottom: 2rem; }
+
+.row {
+  widht: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; }
+
+.col {
+  flex-basis: 32%; }
+
+.card {
+  font-family: 'Yeseva One', cursive; }
+  .card_image {
+    max-widht: 28rem; }
+  .card_text {
+    background-color: #fff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    max-widht: 23.6rem;
+    margin: 0 auto;
+    margin-top: -8rem;
+    padding: 25px 30px;
+    border: 1px greensolid;
+    position: relative; }
+  .card_title {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.29rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem; }
+  .card_list {
+    margin: 0;
+    padding: 0 0 0 1rem;
+    font-size: 1.07rem;
+    line-height: 1.79rem;
+    color: #959595;
+    position: relative;
+    margin-bottom: 2.5rem; }
+  .card_pricetag {
+    font-size: 1.79rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #e3b873;
+    color: #fff;
+    padding: 17px 2.6rem;
+    position: absolute;
+    left: 0;
+    bottom: -1.79rem; }
