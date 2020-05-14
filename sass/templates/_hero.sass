@@ -1,14 +1,16 @@
 .hero 
     background: url("../img/hero1-bg.jpg") no-repeat $dark center/cover
     background-size: cover
-    height: 100vh
+    height: 102vh 
     color: $light
     position: relative
     padding-top: 100px
     display: flex
     flex-direction: column
     justify-content: center
-    align-items: center      
+    align-items: center
+    widht: 100%
+
     &::before
         content: ''
         top: 0
@@ -21,7 +23,8 @@
     &_content
         max-width: 47.85rem
         position: relative
-        margin-left: 4.28rem
+        padding-left: 4.28rem
+        margin-left: 86px
     &_title
         line-height: 3.73rem
         font-weight: normal
@@ -51,8 +54,8 @@
        
     &_scroll-down
         position: absolute
-        left: 0
-        bottom: 0
+        left: 6px
+        bottom: -2.9rem
         min-width: 17.6rem
         min-height: 6.92rem
         background-color: $dark

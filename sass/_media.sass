@@ -1,44 +1,55 @@
-@media screen and (max-width: 1500px)
-    .contacts
-        &_button
-            margin-right: 1.5rem
 
+
+@media screen and (max-width: 1450px)
+    .container
+        width: 100%
+    .logo
+        margin-right: 5.857rem    
+    .nav   
+        justify-content: flex-start
+        display: flex
+        align-items: center  
+        margin-right: 6.3rem
+        &_item
+            margin-right: 2.857rem
+            margin-left: 0
+    .contacts
+        margin-left:  0      
+@media screen and (max-width: 1400px)
+    .menu
+        padding-right: 5%
+    .logo
+        margin-right: 4%   
+    .nav   
+        margin-right: 5%
+        &_item
+            margin-left: 0
+    .contacts
+        margin-left:  0      
 @media screen and (max-width: 1260px)
     html
         font-size: 13px
     .menu
-        margin-left: -1rem
-        &_logo
-            margin-right: 3rem
+        padding-right: 6% 
 
 @media screen and (max-width: 1200px)
     html
-        font-size: 12px
-        
+        font-size: 12px      
     .menu
-        width: 100%
-        margin-left: -5%
+        margin-left: 3rem
         font-size: 1rem        
         &_logo
-            margin-right: 2rem
-            
+            margin-right: 
     .hero
         &_instagram
-            max-width: 3rem  
-    
-
+            max-width: 3rem   
         &_item
-            margin-right: 
             margin-left: 0
     .contacts
-        margin-left: 
         padding: 0 auto
-        &_phone
-            margin-left: 
         &_button
             &--primary
                 font-size: 1rem
-
 
 @media screen and (max-width: 1060px)
     .menu
@@ -57,7 +68,7 @@
         &_instagram
             display: none
         &_content
-            margin-left: 
+            margin-left: 4rem
         &_scroll-down
             min-width: 15rem
             min-height: 5rem
@@ -68,44 +79,55 @@
             color: $light
             text-decoration: none
     .menu
+        margin-left: 8rem
+        display: flex
+        justify-content: space-between
+        align-items: center      
         &_logo
-            margin-left: 6.75rem
-            margin-right: 0.5rem
+            margin-right: 0
     .contacts
+        width: 330px
+        margin-right: 5%
+        margin-left: 5%
         &_button
-            max-widht: 70px
-            font-size: 0.8rem
+            margin-left: 5%
 
 @media screen and (max-width: 570px)
     .header        
+        min-height: 48px
+    .menu
+        margin-left: 2rem
+        font-weight: 500
         display: flex
         justify-content: space-between
         align-items: center
-        min-height: 48px
+    .logo
+        widht: 176px
+        margin-left: 0        
 
     .contacts
+        display: flex
+        justify-content: flex-end
         &_button
             display: none
         &_phone
-            margin-right: 1rem
             color: $light
-            text-decoration: none
+            text-decoration: none  
+            min-widht: 10rem    
     .title
         font-size: 1.64rem
         line-height: 132%
         margin-bottom: 1.3rem
-    .container
-        margin-left: 1rem
     .hero
         height: auto
         &_scroll-down
             display: none
         &_content
             width: 90%
-            margin-left: 1rem
+            margin-left: 2rem
             padding-left: 0
         &_title
-            width: 100%
+            width: 95%
             font-size: 1.93rem
             margin-bottom: 16px
             margin-top: 49px
@@ -119,65 +141,33 @@
             margin-bottom: 2.16rem
             font-size: 1.084rem
             min-height: 4.25rem
-            min-width: 250px
-                
-    .menu
-        margin-left: 1.1rem
-        font-weight: 500
-        &_logo
-            margin-right: 2rem
-            margin-left: 0
-        &_phone
-            margin-left: 0
-
-@media screen and (max-width: 420px)
-    .hero
-        &_content
-            width: 100%
-            margin-left: 1rem
-            padding-left: 0
-        &_title
-            width: 100%
-            font-size: 1.93rem
-            margin-bottom: 16px
-            margin-top: 49px
-        &_text
-            font-size: 1.5rem
-            margin-bottom: 2.66rem
-            width: 95%
-            line-height: 135%
-        &_button
-            display: block
-            widht: 100%
- 
+            min-width: 70%
             
     
-@media screen and (max-width: 320px)    
+@media screen and (max-width: 375px)    
     .header
         display: flex
         justify-content: space-between
-        align-items: center   
+        align-items: center       
 
     .contacts
+        margin-right: 0
         &_button
             display: none
         &_phone
-            margin-right: 1rem
             color: $light
             text-decoration: none
     .title
         font-size: 1.64rem
         line-height: 132%
         margin-bottom: 1.3rem
-    .container
-        margin-left: 1rem
     .hero
         height: auto
         &_scroll-down
             display: none
         &_content
-            min-width: 97%
-            margin-left: 1rem
+            widht: 98%
+            margin-left: 1.5rem
             padding-left: 0
         &_title
             max-width: 100%
@@ -190,18 +180,19 @@
             line-height: 135%
         &_button
             display: block
-            min-width: 83%
+            min-width: 100%
             margin-bottom: 2.16rem
             font-size: 1.1rem
             min-height: 4.25rem
                 
     .menu
-        margin-left: 1rem
+        margin-left: 1.5rem
+        margin-right: 1.5rem
+        min-height: 50px
         &_logo
             margin-right: 0
             margin-left: 0
         &_phone
-            margin-right: 1rem
 
 @media screen and (max-height: 500px)
     .hero
