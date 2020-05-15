@@ -353,6 +353,17 @@ template {
   animation-delay: 1s;
   animation-direction: reverse; }
 
+.row {
+  widht: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  border: 1px solid black; }
+
+.col {
+  flex-basis: 30%;
+  border: 1px solid red; }
+
 .header {
   background-color: #131313;
   position: fixed;
@@ -736,31 +747,47 @@ img {
     min-width: 15rem;
     min-height: 5rem; } }
 
-.types_section-title {
-  margin-bottom: 2rem; }
+.types {
+  widht: 86%; }
+  .types_section-title {
+    margin-bottom: 2rem; }
 
-.row {
-  widht: 100%;
+.types_card {
+  width: 100%;
+  margin-top: 25px;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start; }
-
-.col {
-  flex-basis: 32%; }
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-grow: 0;
+  flex-wrap: nowrap;
+  flex-basis: auto; }
 
 .card {
-  font-family: 'Yeseva One', cursive; }
+  font-family: 'Yeseva One', cursive;
+  widht: 100%;
+  position: relative;
+  margin: 0 0 0 30px; }
   .card_image {
-    max-widht: 28rem; }
-  .card_text {
-    background-color: #fff;
+    border: yellow solid 1px;
+    background-size: 100%; }
+  .card_photo1 {
+    background: url("../img/types/types_1.png") no-repeat center/cover; }
+  .card_photo2 {
+    background: url("../img/types/types_2.png") no-repeat blue center/cover; }
+  .card_photo3 {
+    background: url("../img/types/types_3.png") no-repeat grey center/cover; }
+  .card--text {
+    background: #fff;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
     max-widht: 23.6rem;
-    margin: 0 auto;
+    margin-right: 1rem;
+    margin-left: 1rem;
     margin-top: -8rem;
     padding: 25px 30px;
     border: 1px greensolid;
-    position: relative; }
+    position: absolute;
+    border: 1px solid grey; }
   .card_title {
     margin: 0;
     text-transform: uppercase;
@@ -773,8 +800,8 @@ img {
     font-size: 1.07rem;
     line-height: 1.79rem;
     color: #959595;
-    position: relative;
-    margin-bottom: 2.5rem; }
+    margin-bottom: 2.5rem;
+    positon: relative; }
   .card_pricetag {
     font-size: 1.79rem;
     text-align: center;

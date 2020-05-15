@@ -1,26 +1,43 @@
 .types
+    widht: 86%
     &_section-title
         margin-bottom: 2rem
-.row
-    widht: 100%
+.types_card
+    height: 
+    width: 100%
+    margin-top: 25px
     display: flex
-    justify-content: space-around
-    align-items: flex-start
-.col
-    flex-basis: 32%
+    flex-direction: row
+    justify-content: space-between
+    align-items: stretch
+    flex-grow: 0
+    flex-wrap: nowrap
+    flex-basis: auto
 .card
     font-family: 'Yeseva One', cursive
+    widht: 100%
+    position: relative
+    margin: 0 0 0 30px
     &_image
-        max-widht: 28rem
-    &_text
-        background-color: #fff
+        border: yellow solid 1px
+        background-size: 100%
+    &_photo1
+        background: url("../img/types/types_1.png") no-repeat center/cover
+    &_photo2
+        background: url("../img/types/types_2.png") no-repeat blue center/cover
+    &_photo3
+        background: url("../img/types/types_3.png") no-repeat grey center/cover
+    &--text
+        background: #fff
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
         max-widht: 23.6rem
-        margin: 0 auto
+        margin-right: 1rem
+        margin-left: 1rem
         margin-top: -8rem
         padding: 25px 30px
         border: 1px greensolid
-        position: relative
+        position: absolute
+        border: 1px solid grey
         
     &_title
         margin: 0
@@ -34,8 +51,8 @@
         font-size: 1.07rem
         line-height: 1.79rem
         color: $secondary
-        position: relative
         margin-bottom: 2.5rem
+        positon: relative
     &_pricetag
         font-size: 1.79rem
         text-align: center
