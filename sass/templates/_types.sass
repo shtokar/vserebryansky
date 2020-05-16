@@ -1,60 +1,69 @@
 .types
-    widht:
     &_section-title
         margin-bottom: 2rem
-.types_card
-    height:
-    display: flex
-    justify-content: space-between
-    align-items: stretch
+    &_card
+        max-widht: 28rem
+  
 
 .card
     font-family: 'Yeseva One', cursive
     widht: 
+    position:
     position: relative
-    border: 1px blue solid
-    &_image
     &--text
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
-        max-widht: 421px
-        max-height: 392px
-        margin-right: 
-        margin-left:
-        margin-top: 
-        padding: 
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2 )
+        max-widht: 286px       
+        margin: -9rem 31px 0    
+        padding: 25px 30px
         position: absolute
-        border: 1px solid grey
+        background-color: $light
         
     &_title
         margin: 0
         text-transform: uppercase
         font-size: 1.29rem
         margin-top: 0
-        margin-bottom: 0.8rem
+        margin-bottom: 13px
+        font-family: 'Yeseva One', cursive
     &_list
-        background: #fff
-        margin-left: 31px 
-        margin-right: 31px 
-        margin-top: 294px 
-        padding: 
+        margin-left:  
+        margin-right: 
+        margin-top: 
+        padding: 0 0 0 1rem
         font-size: 1.07rem
         line-height: 1.79rem
         color: $secondary
-        margin-bottom: 
-        position: absolute
-        max-height: 330px
-        max-width: 292px
+        margin-bottom: 23px
+        font-family: 'Futura Book', serif
+        
+
+       
     &_pricetag
-        font-size: 1.79rem
+        font-size: 18px
         text-align: center
         text-transform: uppercase
         background-color: $primary
         color: $light
-        padding: 17px 2.6rem
-        position: absolute
+        padding: 17px 24px
+        position: 
         left: 0
-        margin-top: 260px
-        
+        bottom: -1.3rem
+        margin-top: 
+        font-family: 'Yeseva One', cursive
+        position: absolute
+        font-weight: normal
+        border: none
+
+@media screen and (max-width: 760px)
+    .row
+        flex-direction: column
+        align-items: center    
+    .types   
+        &_card
+            margin-bottom: 4.2rem
+    .card
+        &--text
+            margin-left: 0
 
 
 
