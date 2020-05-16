@@ -761,7 +761,6 @@ img {
     background-color: #fff; }
   .card_title {
     margin: 0;
-    text-transform: uppercase;
     font-size: 1.29rem;
     margin-top: 0;
     margin-bottom: 13px;
@@ -779,7 +778,8 @@ img {
     text-transform: uppercase;
     background-color: #e3b873;
     color: #fff;
-    padding: 17px 24px;
+    padding: 17px 40px;
+    position: absolute;
     left: 0;
     bottom: -1.3rem;
     font-family: 'Yeseva One', cursive;
