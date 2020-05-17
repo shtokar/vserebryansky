@@ -1,10 +1,4 @@
-@media screen and (max-width: 1900px)
-    .row
-        &_types
-            padding: 0 8%
-    .card
-        margin: 0 3%
-
+       
 @media screen and (max-width: 1450px)
     .container
         width: 100%
@@ -22,9 +16,7 @@
         margin-left:  0   
     .row
         &_types
-            padding: 0 6%
-    .card
-        margin: 0 3%
+            padding: 0 5.71rem
 
 @media screen and (max-width: 1400px)
     .menu
@@ -39,22 +31,25 @@
         margin-left:  0  
     .types
         font-size: 13px
-    .row
-        &_types
-            padding: 0 3%
     .card
-        margin: 0 2%
+        margin: 0 4%
+        padding: 0 3%
+
+@media screen and (max-width: 1350px)
+    .card 
+        margin: 0
+        padding: 0 2%
+        &--text
+        &--image
+          
 
 @media screen and (max-width: 1260px)
     html
         font-size: 13px
     .menu
         padding-right: 6% 
-    .row
-        &_types
-            padding: 0 1%
-    .card
-        margin: 0 2%
+    .card 
+        margin: 0 4%
 
 @media screen and (max-width: 1200px)
     html
@@ -76,14 +71,15 @@
                 font-size: 1rem
     .row
         &_types
-            padding: 0 2%
+            padding: 0 38px 
     .card 
-        margin: 0 2%
+        margin: 0 3% 4rem
+        max-widht: 25rem
         &--text
             padding: 1.79rem 22% 1.79rem 2.14rem
-            min-widht: 25rem
-        &_img
-            max-widht: 26rem
+            max-widht: 24rem
+        &--image
+            max-widht: 
 
     
 
@@ -95,7 +91,22 @@
             margin-right: 0.5rem
         &_button
             margin-right: 1rem
-
+    .card 
+        margin-bottom: 4rem
+        position: relative        
+        &--image
+        &--text
+            position: relative
+            left: 0
+            
+            
+            
+    .row
+        &_types
+            justify-content: space-around
+            align-items: center
+            flex-wrap: wrap
+            font-size: 14px
 
 @media screen and (max-width: 992px)
     .nav
@@ -127,6 +138,23 @@
         margin-left: 5%
         &_button
             margin-left: 5%
+    .row
+        &_types
+            min-height: 1228px
+            font-size: 14px
+            border: 1px solid grey
+    .card
+        margin-bottom: 4rem
+        margin-top: 0
+        padding-left: 0
+        &--image
+            
+        &--text
+            margin-left: 0
+            
+    .types   
+        &_card
+            
 
 @media screen and (max-width: 760px)
     .types
@@ -136,7 +164,6 @@
         align-items: center  
         &_types
             height: 1842px
-            padding: 0
     .col
         margin-bottom: 4rem
         .card
