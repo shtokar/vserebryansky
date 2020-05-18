@@ -414,14 +414,12 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  widht: 100%;
-  border: 1px #935 solid; }
+  widht: 100%; }
   .row_types {
     min-height: 614px;
     padding: 0 7%; }
 
 .col--30 {
-  max-widht: 30%;
   margin: 0 auto; }
 
 .col-50 {
@@ -655,7 +653,6 @@ img {
 
 @media screen and (max-width: 1350px) {
   .card {
-    margin: 0;
     padding: 0 2%; } }
 
 @media screen and (max-width: 1260px) {
@@ -683,11 +680,7 @@ img {
   .row_types {
     padding: 0 38px; }
   .card {
-    margin: 0 3% 4rem;
-    max-widht: 25rem; }
-    .card--text {
-      padding: 1.79rem 22% 1.79rem 2.14rem;
-      max-widht: 24rem; } }
+    margin: 0 3% 79px; } }
 
 @media screen and (max-width: 1060px) {
   .menu {
@@ -697,16 +690,26 @@ img {
   .contacts_button {
     margin-right: 1rem; }
   .card {
-    margin-bottom: 4rem;
+    padding-left: 0;
+    margin: 0 0 79px;
     position: relative; }
+    .card_title {
+      font-size: 15px; }
+    .card_list {
+      font-size: 13px; }
     .card--text {
-      position: relative;
-      left: 0; }
+      margin: -9rem auto 0 0;
+      min-widht: 336px; }
+    .card_pricetag {
+      font-size: 15px;
+      padding: 1.224rem 3rem; }
   .row_types {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 14px; } }
+    font-size: 14px; }
+  .section-title_heading {
+    font-size: 22px; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -738,22 +741,11 @@ img {
   .row_types {
     min-height: 1228px;
     font-size: 14px;
-    border: 1px solid grey; }
-  .card {
-    margin-bottom: 4rem;
-    margin-top: 0;
-    padding-left: 0; }
-    .card--text {
-      margin-left: 0; } }
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; } }
 
 @media screen and (max-width: 760px) {
-  .types {
-    font-size: 13px; }
-  .row {
-    flex-direction: column;
-    align-items: center; }
-    .row_types {
-      height: 1842px; }
   .col {
     margin-bottom: 4rem; }
     .col .card {
@@ -811,7 +803,13 @@ img {
       margin-bottom: 2.16rem;
       font-size: 1.084rem;
       min-height: 4.25rem;
-      min-width: 70%; } }
+      min-width: 70%; }
+  .row {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 auto; } }
 
 @media screen and (max-width: 375px) {
   .header {
@@ -858,7 +856,15 @@ img {
     min-height: 50px; }
     .menu_logo {
       margin-right: 0;
-      margin-left: 0; } }
+      margin-left: 0; }
+  .row {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0; }
+    .row-types {
+      font-size: 14px; } }
 
 @media screen and (max-height: 500px) {
   .hero_scroll-down {
@@ -874,17 +880,20 @@ img {
   .types_section-title {
     margin-bottom: 2rem; }
 
+.section-title_heading {
+  font-size: 20px; }
+
 .card {
   font-family: 'Yeseva One', cursive;
   position: relative;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-top: 0; }
   .card--image {
     height: 30.07rem;
-    border: 1px solid #612;
-    min-width: 28rem; }
+    min-width: 28rem;
+    widht: 100%; }
   .card--text {
     position: relative;
     margin-top: -9.3rem;
@@ -896,8 +905,7 @@ img {
     font-size: 1.29rem;
     margin-top: 0;
     margin-bottom: 0.7rem;
-    font-weight: normal;
-    min-widht: 19.28rem; }
+    font-weight: normal; }
   .card_list {
     padding: 0 0 0 1.1rem;
     margin: 0;
