@@ -396,8 +396,9 @@ template {
   display: none; }
 
 .container {
-  margin: auto 0;
-  width: 100%; }
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%; }
 
 .block {
   -webkit-animation-name: Show;
@@ -409,7 +410,7 @@ template {
   animation-direction: reverse; }
 
 .row {
-  margin: 0;
+  margin: 0 auto;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -417,9 +418,10 @@ template {
   widht: 100%; }
   .row_types {
     min-height: 614px;
-    padding: 0 7%; }
+    padding: 0 6%; }
 
 .col--30 {
+  flex-basis: 30%;
   margin: 0 auto; }
 
 .col-50 {
@@ -618,7 +620,8 @@ img {
 
 @media screen and (max-width: 1450px) {
   .container {
-    width: 100%; }
+    margin: 0 auto;
+    widht: 100%; }
   .logo {
     margin-right: 5.857rem; }
   .nav {
@@ -635,6 +638,9 @@ img {
     padding: 0 5.71rem; } }
 
 @media screen and (max-width: 1400px) {
+  .container {
+    margin: 0 auto;
+    widht: 100%; }
   .menu {
     padding-right: 5%; }
   .logo {
@@ -649,15 +655,28 @@ img {
     font-size: 13px; }
   .card {
     margin: 0 4%;
-    padding: 0 3%; } }
+    padding: 0 3%; }
+    .card--image {
+      max-widht: 25rem; }
+  .row_types {
+    padding: 0 4%; } }
 
 @media screen and (max-width: 1350px) {
+  .container {
+    margin: 0 auto;
+    width: 100%; }
   .card {
+    padding: 0 1%;
+    max-widht: 100%; }
+  .row_types {
     padding: 0 2%; } }
 
 @media screen and (max-width: 1260px) {
   html {
     font-size: 13px; }
+  .container {
+    margin: 0 auto;
+    width: 100%; }
   .menu {
     padding-right: 6%; }
   .card {
@@ -666,6 +685,9 @@ img {
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
+  .container {
+    margin: 0 auto;
+    width: 100%; }
   .menu {
     margin-left: 3rem;
     font-size: 1rem; }
@@ -678,11 +700,16 @@ img {
     .contacts_button--primary {
       font-size: 1rem; }
   .row_types {
-    padding: 0 38px; }
+    padding: 0 2%; }
   .card {
-    margin: 0 3% 79px; } }
+    margin: 0 1% 79px; }
+    .card--image {
+      max-widht: 22rem; } }
 
 @media screen and (max-width: 1060px) {
+  .container {
+    margin: 0 auto;
+    width: 100%; }
   .menu {
     font-size: 0.95rem; }
   .contacts_phone {
@@ -712,6 +739,8 @@ img {
     font-size: 22px; } }
 
 @media screen and (max-width: 992px) {
+  .container {
+    margin: 0 auto; }
   .nav {
     display: none; }
   .hero_instagram {
@@ -889,10 +918,10 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 0; }
+  margin-top: 0;
+  max-width: 100%; }
   .card--image {
     height: 30.07rem;
-    min-width: 28rem;
     widht: 100%; }
   .card--text {
     position: relative;

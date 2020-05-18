@@ -1,7 +1,8 @@
-       
+    
 @media screen and (max-width: 1450px)
     .container
-        width: 100%
+        margin: 0 auto
+        widht: 100%
     .logo
         margin-right: 5.857rem    
     .nav   
@@ -19,6 +20,10 @@
             padding: 0 5.71rem
 
 @media screen and (max-width: 1400px)
+    .container 
+        margin: 0 auto
+        widht: 100%
+    
     .menu
         padding-right: 5%
     .logo
@@ -34,15 +39,30 @@
     .card
         margin: 0 4%
         padding: 0 3%
+        &--image
+            max-widht: 25rem
+    .row
+        &_types
+            padding: 0 4%
 
 @media screen and (max-width: 1350px)
+    .container 
+        margin: 0 auto
+        width: 100%
     .card 
-        padding: 0 2%
-          
+        padding: 0 1%
+        max-widht: 100%
+        &--image
+    .row
+        &_types
+            padding: 0 2% 
 
 @media screen and (max-width: 1260px)
     html
         font-size: 13px
+    .container 
+        margin: 0 auto
+        width: 100%
     .menu
         padding-right: 6% 
     .card 
@@ -50,7 +70,10 @@
 
 @media screen and (max-width: 1200px)
     html
-        font-size: 12px      
+        font-size: 12px  
+    .container 
+        margin: 0 auto
+        width: 100%    
     .menu
         margin-left: 3rem
         font-size: 1rem        
@@ -68,12 +91,17 @@
                 font-size: 1rem
     .row
         &_types
-            padding: 0 38px 
+            padding: 0 2% 
     .card 
-        margin: 0 3% 79px
+        margin: 0 1% 79px
+        &--image
+            max-widht: 22rem
        
 
 @media screen and (max-width: 1060px)
+    .container 
+        margin: 0 auto 
+        width: 100%
     .menu
         font-size: 0.95rem
     .contacts
@@ -112,6 +140,8 @@
             
 
 @media screen and (max-width: 992px)
+    .container 
+        margin: 0 auto 
     .nav
         display: none 
     .hero
