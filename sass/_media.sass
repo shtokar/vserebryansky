@@ -165,8 +165,9 @@
     .design_card
         position: relative
         min-height: 560px
-        margin-bottom: 0
         margin: 0 0 79px
+        padding-left: 0
+        display: block
         &_title
             font-size: 15px
         &_list-1
@@ -176,9 +177,11 @@
         &_list-3
             font-size: 13px
         &--text            
-            padding: 1.224rem 3rem  
+            padding: 1.224rem 3rem           
+            position: absolute
+            margin-top: -9.3rem
+            left: -8%
             
-                        
     .row
         &_types
             justify-content: space-around
@@ -254,7 +257,6 @@
     .col
         margin-bottom: 4rem
         .card
-            border: blue solid 1px
     .types
         &_card
             margin-bottom: 4.2rem
@@ -397,6 +399,7 @@
             font-size: 14px
         &_design
             font-size: 14px
+            margin-bottom: 4rem
     
 
 @media screen and (max-height: 500px)
