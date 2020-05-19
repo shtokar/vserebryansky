@@ -1,3 +1,7 @@
+@media screen and (max-width: 1900px)
+    .design
+        background: linear-gradient(to top, $dark 0%, $dark 430px, $light 430px, $light 100%)
+
 @media screen and (max-width: 1450px)
     .container
         margin: 0 auto
@@ -15,8 +19,12 @@
     .contacts
         margin-left:  0   
     .row
-        &_types, &_design
+        &_types
             padding: 0 5.71rem
+        &_design
+            padding: 0 5.71rem
+
+
 
 @media screen and (max-width: 1400px)
     .container 
@@ -35,13 +43,24 @@
         margin-left:  0  
     .types
         font-size: 13px
+    .design
+        font-size: 13px
     .card
         margin: 0 4%
         padding: 0 3%
         &--image
             max-widht: 25rem
     .row
-        &_types, &_design
+        &_types
+            padding: 0 4%
+
+    .design_card
+        margin: 0 8%
+        padding: 0
+        &--image
+            max-widht: 25rem
+    .row
+        &_design
             padding: 0 4%
 
 @media screen and (max-width: 1350px)
@@ -51,10 +70,15 @@
     .card 
         padding: 0 1%
         max-widht: 100%
-        &--image
+    .design_card 
+        padding: 0
+        max-widht: 100%
     .row
-        &_types, &_design
+        &_types
             padding: 0 2% 
+        &_design
+            padding: 0 2%
+
 
 @media screen and (max-width: 1260px)
     html
@@ -66,6 +90,9 @@
         padding-right: 6% 
     .card 
         margin: 0 4%
+    .design_card
+        margin: 0 4%
+
 
 @media screen and (max-width: 1200px)
     html
@@ -89,15 +116,26 @@
             &--primary
                 font-size: 1rem
     .row
-        &_types, &_design
+        &_types
             padding: 0 2% 
-    .card, .design_card
+        &_design
+            padding: 0 2%
+
+    .card
         margin: 0 1% 79px
+        &--image
+            max-widht: 22rem
+    .design_card
+        margin: 0 2% 79px
+        padding: 0 1%
         &--image
             max-widht: 22rem
        
 
 @media screen and (max-width: 1060px)
+    .design
+        background: linear-gradient(to top, $dark 0%, $dark 50%, $dark 50%, $dark 100%)
+        height: auto
     .container 
         margin: 0 auto 
         width: 100%
@@ -108,7 +146,7 @@
             margin-right: 0.5rem
         &_button
             margin-right: 1rem
-    .card, .design_card
+    .card
         padding-left: 0
         margin: 0 0 79px 
         position: relative
@@ -119,14 +157,35 @@
         &--text
             margin: -9rem auto 0 0
             min-widht: 336px
+
         &_pricetag
             font-size: 15px
             padding: 1.224rem 3rem
-            
+        
+    .design_card
+        position: relative
+        min-height: 560px
+        margin-bottom: 0
+        margin: 0 0 79px
+        &_title
+            font-size: 15px
+        &_list-1
+            font-size: 13px
+        &_list-2
+            font-size: 13px
+        &_list-3
+            font-size: 13px
+        &--text            
+            padding: 1.224rem 3rem  
             
                         
     .row
-        &_types, &_design
+        &_types
+            justify-content: space-around
+            align-items: center
+            flex-wrap: wrap
+            font-size: 14px
+        &_design
             justify-content: space-around
             align-items: center
             flex-wrap: wrap
@@ -136,7 +195,12 @@
                 font-size: 22px
     .col
         &--30
-            
+
+    .design .section-title  
+        &_about
+            color: $light
+        &_heading            
+            color: $light
 
 @media screen and (max-width: 992px)
     .container 
@@ -171,12 +235,18 @@
         &_button
             margin-left: 5%
     .row
-        &_types, &_design
+        &_types
             min-height: 1228px
             font-size: 14px
             justify-content: space-around
             align-items: flex-start
-            flex-wrap: wrap          
+            flex-wrap: wrap       
+        &_design
+            min-height: 1228px
+            font-size: 14px
+            justify-content: space-around
+            align-items: flex-start
+            flex-wrap: wrap        
             
         
             
@@ -185,11 +255,17 @@
         margin-bottom: 4rem
         .card
             border: blue solid 1px
-    .types, &_design   
+    .types
+        &_card
+            margin-bottom: 4.2rem
+    .design   
         &_card
             margin-bottom: 4.2rem
 
-    .card, .design_card
+    .card
+        &--text
+            margin-left: 0
+    .design_card
         &--text
             margin-left: 0
 
@@ -251,6 +327,16 @@
         align-items: flex-start
         padding: 0 auto
             
+    .design .section-title  
+        &_about
+            font-size: 15px
+            min-widht: 306px
+            width: 80%
+            margin: 0 auto
+        &_heading            
+            font-size: 22px
+    .design_card
+        margin-bottom: 0
     
 @media screen and (max-width: 375px)    
     .header
@@ -307,7 +393,9 @@
         justify-content: center
         align-items: flex-start
         padding: 0
-        &-types, &_design
+        &-types
+            font-size: 14px
+        &_design
             font-size: 14px
     
 

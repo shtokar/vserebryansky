@@ -1,5 +1,8 @@
 .design
     padding: 0
+    min-height: 950px
+    width: 100%
+    border: 2px yellow solid
     &_section-title
         margin-bottom: 2rem
 .section
@@ -7,24 +10,24 @@
                 font-size: 20px
 .design_card
     font-family: 'Yeseva One', cursive
-    position: relative
-    display: flex
-    flex-direction: column
-    align-items: center
-    margin-top: 0
-    max-width: 100%
+    max-width: 392px
+    border: 1px solid grey
+    margin: 0 
     &--image
         height: 30.07rem
-        widht: 100%
-        
+        widht: inherit   
+        margin: 0   
     &--text
-        position: relative        
+        position: relative 
+        margin: 0 8%
         margin-top: -9.3rem 
-        padding: 1.79rem 0 1.79rem 0
+        padding: 1.79rem 2.14rem
         background-color: $light
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3) 
-        margin-left: 
-        margin-right:       
+        box-shadow: 10px 10px 20px rgba($primary, 0.3)       
+        border: 1px solid blue
+        max-widht: 330px
+    
+       
         
     &_title
         font-family: 'Yeseva One', cursive
@@ -33,16 +36,38 @@
         margin-bottom: 0.7rem
         font-weight: normal
 
-    &_list
-        padding: 0 0 0 1.1rem
-        margin: 0 3rem 0 0
+
+
+    &_list-1
+        padding: 0 7.2rem 0 1rem
         font-size: 1.07rem
         line-height: 1.79rem
         color: $secondary
         margin-bottom: 2.5rem        
         font-weight: normal
-        font-family: 'Futura Book', serif        
-       
+        font-family: 'Futura Book', serif
+        
+    &_list-2
+        padding: 0 7.1rem 0 1rem
+        font-size: 1.07rem
+        line-height: 1.79rem
+        color: $secondary
+        margin-bottom: 2.5rem        
+        font-weight: normal
+        font-family: 'Futura Book', serif
+    &_list-3
+        padding: 0 4.7rem 0 1rem
+        font-size: 1.07rem
+        line-height: 1.79rem
+        color: $secondary
+        margin-bottom: 2.5rem        
+        font-weight: normal
+        font-family: 'Futura Book', serif   
+              
+              
+              
+
+
     &_pricetag
         font-size: 1.285rem
         text-align: center
@@ -56,8 +81,8 @@
         position: absolute
         font-weight: normal
         padding: 1.214rem 2.85rem
-        border: none
-    
+        border: none   
+
 
 
 
