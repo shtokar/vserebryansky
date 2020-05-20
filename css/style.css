@@ -370,13 +370,13 @@ template {
   opacity: 0;
   visibility: hidden; }
   .policy__checkbox:checked + .policy__label::before {
-    background: #e3b873 url("../img/check.svg") no-repeat center/0.8rem; }
+    background: #e3b873 url("../img/modal/check.svg") no-repeat center/0.8rem; }
 
 .policy__label {
   display: flex;
   align-items: center;
   margin-top: -1.257rem;
-  font-size: 16px; }
+  font-size: 1.07rem; }
   .policy__label::before {
     content: '';
     width: 1.285rem;
@@ -476,13 +476,17 @@ template {
     font-family: 'Futura Book';
     color: #fff; }
     .nav_item_one {
-      color: #e3b873; }
+      color: #e3b873;
+      color: #eac995; }
     .nav_item:hover {
       color: #e3b873; }
 
 .phone {
   color: #e3b873;
   font-weight: 500; }
+  .phone:hover {
+    color: #eac995;
+    text-decoration: none; }
 
 .contacts {
   margin-left: 5%; }
@@ -585,6 +589,8 @@ template {
       height: 1px;
       background-color: #e3b873;
       margin-left: 8px; }
+    .instagram_link:hover {
+      color: #eac995; }
 
 .title {
   margin: 0;
@@ -1024,7 +1030,7 @@ img {
     visibility: visible; }
   .modal__dialog {
     position: relative;
-    background: #131313 url("../img/bg-lines.svg") no-repeat center;
+    background: #131313 url("../img/modal/bg-modal.svg") no-repeat center;
     padding: 2.357rem 3.5rem 1.928rem;
     color: #fff;
     max-width: 36.36rem; }
@@ -1034,7 +1040,7 @@ img {
     top: 0;
     width: 2rem;
     height: 2rem;
-    background: transparent url("../img/close.svg") no-repeat center;
+    background: transparent url("../img/modal/close.svg") no-repeat center;
     border: none;
     outline: none;
     margin: 0.857rem;
@@ -1045,8 +1051,9 @@ img {
     font-weight: normal;
     line-height: 1.857rem;
     text-align: center;
+    margin: 12px 12px 2rem 0;
     margin: 0;
-    margin-bottom: 2rem; }
+    margin-bottom: 2.428rem; }
   .modal__form {
     display: flex;
     flex-direction: column;
@@ -1054,7 +1061,7 @@ img {
   .modal__input {
     margin-bottom: 3.428rem; }
     .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+      margin-bottom: 1.1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {

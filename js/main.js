@@ -1,25 +1,26 @@
-/*
+
 document.addEventListener("DOMContentLoaded", function (event) {
-    const modal = document.querySelector('.modal');
-    const modalBtn = document.querySelectorAll('[data-toggle=modal]');
-    const closeBtn = document.querySelector('.modal__close');
-    const switchModal = () => {
+    const modal = document.querySelector('.modal');//обращение к модальному окну
+    const modalBtn = document.querySelectorAll('[data-toggle=modal]');//кнопка для вызова модального окна
+    const closeBtn = document.querySelector('.modal__close');//кнопка закрытия модального окна
+    const switchModal = () => {//функция вкл выкл модального окна
         modal.classList.toggle('modal--visible');
     }
     
-    modalBtn.forEach(element => {
-        element.addEventListener('click', switchModal);
+    modalBtn.forEach(element => {//скрипт переборки массива объектов
+        element.addEventListener('click', switchModal);//слушатель события
+            modal.classList.toggle('modal--visible');//вкл выкл модального окна
     })
-    closeBtn.addEventListener('click', switchModal);
+    closeBtn.addEventListener('click', switchModal);//функция вкл модального окна при нажать кнопки
     modal.addEventListener('click', (event) => {
         if (event.target === modal)  {
             switchModal();
         }
     })
 })
-*/
 
-$(document).ready(function () {
+
+/*$(document).ready(function () {
     var modal = $('.modal'),
         modalBtn = $('[data-toggle=modal]'),
         closeBtn = $('.modal__close');
@@ -72,4 +73,4 @@ function backToTop() {
     })
 }
 
-backToTop();
+backToTop();*/

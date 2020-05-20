@@ -40,12 +40,18 @@
         color: $light
         &_one
             color: $primary 
+            &:hover
+            color: lighten($primary, 8%)
         &:hover
             color: $primary
 
 .phone 
     color: $primary
     font-weight: 500
+    &:hover
+        color: lighten($primary, 8%)
+        text-decoration: none
+
 
 .contacts
     margin-left: 5%
