@@ -401,7 +401,7 @@ template {
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 100%; }
+  max-width: 1450px; }
 
 .block {
   -webkit-animation-name: Show;
@@ -603,8 +603,7 @@ html {
 body {
   font-family: 'Futura Book', sans-serif;
   font-size: 1rem;
-  min-width: 375px;
-  max-widht: 1450px; }
+  min-width: 375px; }
 
 img {
   max-widht: 100%; }
