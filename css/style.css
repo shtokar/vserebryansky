@@ -1010,7 +1010,7 @@ img {
     min-width: 15rem;
     min-height: 5rem; } }
 
-.modal {
+.modal, .after_modal {
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -1025,16 +1025,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: center; }
-  .modal--visible {
+  .modal--visible, .after_modal--visible {
     opacity: 1;
     visibility: visible; }
-  .modal__dialog {
+  .modal__dialog, .after_modal__dialog {
     position: relative;
     background: #131313 url("../img/modal/bg-modal.svg") no-repeat center;
     padding: 2.357rem 3.5rem 1.928rem;
     color: #fff;
     max-width: 36.36rem; }
-  .modal__close {
+  .modal__close, .after_modal__close {
     position: absolute;
     right: 0;
     top: 0;
@@ -1045,7 +1045,7 @@ img {
     outline: none;
     margin: 0.857rem;
     cursor: pointer; }
-  .modal__title {
+  .modal__title, .after_modal__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
     font-weight: normal;
@@ -1054,17 +1054,17 @@ img {
     margin: 12px 12px 2rem 0;
     margin: 0;
     margin-bottom: 2.428rem; }
-  .modal__form {
+  .modal__form, .after_modal__form {
     display: flex;
     flex-direction: column;
     outline: none; }
-  .modal__input {
+  .modal__input, .after_modal__input {
     margin-bottom: 3.428rem; }
-    .modal__input:last-of-type {
+    .modal__input:last-of-type, .after_modal__input:last-of-type {
       margin-bottom: 1.1rem; }
-  .modal__policy {
+  .modal__policy, .after_modal__policy {
     margin-bottom: 2.7rem; }
-  .modal__button {
+  .modal__button, .after_modal__button {
     align-self: flex-end;
     width: 15.6rem;
     height: 3.642rem; }

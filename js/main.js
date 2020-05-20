@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const modal = document.querySelector('.modal');//обращение к модальному окну
     const modalBtn = document.querySelectorAll('[data-toggle=modal]');//кнопка для вызова модального окна
     const closeBtn = document.querySelector('.modal__close');//кнопка закрытия модального окна
-    const keyCode = 27;
     const switchModal = () => {//функция вкл выкл модального окна
         modal.classList.toggle('modal--visible');
     }
@@ -17,14 +16,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
         if (event.target === modal)  {
             switchModal();
         }
-      
-    })
-})
+    
+  
 
-$(document).on('keydown', function(e) {
-    if (e.keyCode == 27)
-    modal.close();
-});  
+  
+    })
+});
+
+function ESCclose(evt){
+    var modal_close = document.getElementById('modal_close');
+    var after_modal = document.getElementsByClassName('after_modal');
+        if (evt.keyCode == 27){
+        modal_close.style.display = 'none';
+        after_modal.style.visibility = 'hidden'
+
+
+
+    }
+}
 
 /****************************************************************************************** 
 document.addEventListener('keypress', function (e) {
