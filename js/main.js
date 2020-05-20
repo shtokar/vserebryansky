@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const switchModal = () => {//функция вкл выкл модального окна
         modal.classList.toggle('modal--visible');
     }
-    
+
     modalBtn.forEach(element => {//скрипт переборки массива объектов
         element.addEventListener('click', switchModal);//слушатель события
             modal.classList.toggle('modal--visible');//вкл выкл модального окна
@@ -19,6 +19,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     })
 })
 
+/*document.addEventListener('keypress', function (e) {
+    if(e.keyCode === 27) document.getElementById('modal_window').hidden= 1;
+    modal.classList.toggle('modal--visible');
+    }); 
+    
 
 /*$(document).ready(function () {
     var modal = $('.modal'),
