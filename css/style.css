@@ -427,6 +427,10 @@ template {
     padding: 0 6%;
     display: flex;
     justify-content: space-around; }
+  .row_projects {
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-around; }
 
 .col--30 {
   flex-basis: 30%;
@@ -620,8 +624,7 @@ h1, h2, h3, h4, strong {
 .section {
   margin-top: 2rem;
   padding: 0;
-  color: #fff;
-  background-color: #131313; }
+  color: #131313; }
   .section-title {
     text-align: center; }
     .section-title--left {
@@ -688,8 +691,7 @@ h1, h2, h3, h4, strong {
 
 @media screen and (max-width: 1450px) {
   .container {
-    margin: 0 auto;
-    widht: 100%; }
+    margin: 0 auto; }
   .logo {
     margin-right: 5.857rem; }
   .nav {
@@ -709,8 +711,7 @@ h1, h2, h3, h4, strong {
 
 @media screen and (max-width: 1400px) {
   .container {
-    margin: 0 auto;
-    widht: 100%; }
+    margin: 0 auto; }
   .menu {
     padding-right: 5%; }
   .logo {
@@ -1275,10 +1276,10 @@ h1, h2, h3, h4, strong {
 
 .swiper-button-prev {
   left: 0;
-  background: url("img/prev.svg") no-repeat center; }
+  background: url("../img/prev.svg") no-repeat center; }
 
 .swiper-button-next {
-  background: url("img/next.svg") no-repeat center; }
+  background: url("../img/next.svg") no-repeat center; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
