@@ -8,11 +8,18 @@ body
     min-width: 375px
 img 
     max-widht: 100% 
+h1, h2, h3, h4, strong
+  font-weight: 400
 .section 
     margin-top: 2rem
     padding: 0
+    &--dark
+    color: $light
+    background-color: $dark
     &-title
         text-align: center
+        &--left
+            text-align: left
         &_image
             display: flex
             align-items: center
@@ -23,7 +30,19 @@ img
                 height: 2px
                 background-color: $primary
                 margin: 0 10px
-        
+        &__text
+            font-size: 1.28rem
+            line-height: 2.07rem
+            max-width: 31.57rem
+        &__word
+            display: flex
+            align-items: center
+            &::after
+                content: ''
+                height: 1px
+                width: 92px
+                background-color: $primary
+                margin-left: 2rem
         &_about
             font-family: 'Futura Book'
             font-weight: normal
@@ -37,7 +56,25 @@ img
             text-transform: uppercase
             font-family: 'Yeseva One', cursive
             font-size: 20px
-            padding-top: 2rem            
+            padding-top: 2rem  
+            line-height: 138%
+            &__primary
+                color: $primary 
+        &__description
+            margin: auto
+            line-height: 130%
+            font-family: 'Futura Book', sans-serif
+            font-size: 1.428rem
+        &__image
+            display: flex
+            justify-content: center
+            align-items: center
+            &::before, &::after
+                content: ''
+                height: 2px
+                width: 32px
+                margin: 0px 10px
+                background-color: $primary         
         
                 
 

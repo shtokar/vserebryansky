@@ -1,5 +1,5 @@
 
-document.addEventListener("DOMContentLoaded", function (event) {
+/*document.addEventListener("DOMContentLoaded", function (event) {
     const modal = document.querySelector('.modal');//обращение к модальному окну
     const modalBtn = document.querySelectorAll('[data-toggle=modal]');//кнопка для вызова модального окна
     const closeBtn = document.querySelector('.modal__close');//кнопка закрытия модального окна
@@ -22,20 +22,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
   
     })
 });
+/************************************************************************************************************ */
 
-function ESCclose(evt){
-    var modal_close = document.getElementById('modal_close');
-    var after_modal = document.getElementsByClassName('after_modal');
+/*function ESCclose(evt){
+    var modal_close = document.getElementsById('modal_close');
         if (evt.keyCode == 27){
-        modal_close.style.display = 'none';
-        after_modal.style.visibility = 'hidden'
+        modal_close.style.box-suppress = 'hide';
 
 
 
     }
 }
 
-/****************************************************************************************** 
+/****************************************************************************************** *********************
 document.addEventListener('keypress', function (e) {
     if(e.keyCode === 27) document.getElementById('modal_id').hidden = 1;
   })
@@ -45,7 +44,7 @@ $('#modal_id').modal({ backdrop: 'static', keyboard: false });
 
 
 
-/*$(document).ready(function () {
+$(document).ready(function () {
     var modal = $('.modal'),
         modalBtn = $('[data-toggle=modal]'),
         closeBtn = $('.modal__close');
@@ -60,6 +59,7 @@ $('#modal_id').modal({ backdrop: 'static', keyboard: false });
         if (modal.is(e.target))
             modal.toggleClass('modal--visible');
     });
+    
     var mySwiper = new Swiper('.swiper-container', {
         loop: true,
         pagination: {
@@ -98,4 +98,4 @@ function backToTop() {
     })
 }
 
-backToTop();*/
+backToTop();
