@@ -342,6 +342,10 @@ template {
     border: 1px #fff solid;
     background-color: transparent;
     color: #fff; }
+    .button--outline:hover {
+      border-color: #e3b873;
+      background-color: transparent;
+      box-shadow: 0px 3px 7px rgba(227, 184, 115, 0.2); }
 
 .label {
   font-size: 1.07rem; }
@@ -562,7 +566,8 @@ template {
     color: #fff;
     text-decoration: none;
     font-family: 'Yeseva One';
-    font-size: 0.857rem; }
+    font-size: 0.857rem;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.1); }
     .hero_scroll-down::after {
       content: '';
       width: 30px;
@@ -618,8 +623,8 @@ body {
 img {
   max-widht: 100%; }
 
-h1, h2, h3, h4, strong {
-  font-weight: 400; }
+h2 {
+  font-size: 20px; }
 
 .section {
   margin-top: 2rem;
@@ -667,6 +672,12 @@ h1, h2, h3, h4, strong {
       font-size: 20px;
       padding-top: 2rem;
       line-height: 138%; }
+      .section-title_heading--control {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 20px;
+        padding-top: 2rem;
+        line-height: 138%; }
       .section-title_heading__primary {
         color: #e3b873; }
     .section-title__description {
@@ -684,6 +695,22 @@ h1, h2, h3, h4, strong {
         width: 32px;
         margin: 0px 10px;
         background-color: #e3b873; }
+
+.control {
+  background-color: #131313;
+  margin-top: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.control h2 {
+  color: #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-top: 2rem;
+  line-height: 138%;
+  font-family: 'Yeseva One', cursive;
+  font-weight: 400; }
 
 @media screen and (max-width: 1900px) {
   .design {
