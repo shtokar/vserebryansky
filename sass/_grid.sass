@@ -14,7 +14,6 @@
     display: flex
     justify-content: space-between
     align-items: flex-start
-    widht: 100%    
     &_types
         min-height: 614px
         padding: 0 6%
@@ -23,16 +22,24 @@
         padding: 0 6%
         display: flex
         justify-content: space-around
-    &_projects
+.projects_row
         padding: 0 6%
-        display: flex
-        justify-content: space-around
-
-
-.col
-    &--30
-        flex-basis: 30%
+        padding-top: 3rem
+        margin-top: 0
+        flex-direction: column
         margin: 0 auto
-        
-    &-50
-        width: 50%
+        height: auto
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        max-height: 608px
+
+.wrap
+    
+
+.col--30
+        flex-basis: 30%
+        margin: 0 auto    
+
+.column-50
+        widht: 50%

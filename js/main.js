@@ -116,7 +116,7 @@ backToTop();
 
 */
 /***********************************Функция при нажатии клавиши ************************************ */
-$( document ).ready(function(ESCclose){
+$( document ).ready(function(){
     $( "body" ).click(function(){ // задаем функцию при нажатиии на элемент button
       $( "modal" ).keydown(); // вызываем событие keydown на элементе <div>
     });
@@ -149,42 +149,46 @@ $(document).ready(function () {
         if (modal.is(e.target))
             modal.toggleClass('modal--visible');
     });
+
+    /********************************************************************* */
     var mySwiper = new Swiper('.swiper-container', {
         loop: true,
         pagination: {
             el: '.swiper-pagination',
-            type: 'bullets',
+            type: 'bullets',//точки
         },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+    navigation: {//задаем стрелки
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
         },
     })
 
-    var next = $('.swiper-button-next');
-    var prev = $('.swiper-button-prev');
+    var next = $('.swiper-button-next');//кнопка вперед
+    var prev = $('.swiper-button-prev');//кнопка назад
     var bullets = $('.swiper-pagination');
 
     next.css('left', prev.width() + 20 + bullets.width() + 20)
     bullets.css('left', prev.width() + 20)
+
+    /*****************************************************************/
+    function backToTop() {
+        let button = $('.back-to-top');
     
+        $(window).on('scroll', () => {
+            if ($(this).scrollTop() >= 50) {
+                button.fadeIn();
+            } else {
+                button.fadeOut();
+            }
+        });
+    
+        button.on('click', (e) => {
+            e.preventDefault();
+            $('html').animate({scrollTop: 0}, 1000);
+        })
+    }
+    
+    backToTop();
+    
+  
 });
-
-function backToTop() {
-    let button = $('.back-to-top');
-
-    $(window).on('scroll', () => {
-        if ($(this).scrollTop() >= 50) {
-            button.fadeIn();
-        } else {
-            button.fadeOut();
-        }
-    });
-
-    button.on('click', (e) => {
-        e.preventDefault();
-        $('html').animate({scrollTop: 0}, 1000);
-    })
-}
-
-backToTop();

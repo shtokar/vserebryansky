@@ -1,7 +1,16 @@
+.swiper-container
+  margin-left: auto
+  margin-right: auto
+  position: relative
+  overflow: hidden
+  list-style: none
+  padding: 0
+  z-index: 1
 .swiper
   &-slide
     display: flex
     flex-wrap: wrap
+    max-widht: 500px
     &__text
       padding-bottom: 2rem
       flex-basis: 50%
@@ -19,19 +28,24 @@
       &-active
         background-color: $light
   &-button
-    &-prev, &-next
+    &::after
+      display: none
+    &-prev
       bottom: 0
       top: auto
-      background-size: 42px
       width: 42px
       height: 14px
-      &::after
-        display: none
-    &-prev
       left: 0
       background: url('../img/prev.svg') no-repeat center
     &-next
+      bottom: 0
+      top: auto
+      width: 42px
+      height: 14px
       background: url('../img/next.svg') no-repeat center
+   
+     
+      
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
   bottom: 0
