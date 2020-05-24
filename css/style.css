@@ -714,7 +714,7 @@ h2 {
 .control {
   background-color: #131313;
   margin-top: 0;
-  padding-top: 2px;
+  padding-top: 3rem;
   padding-bottom: 2rem; }
 
 .control h2 {
@@ -970,7 +970,9 @@ h2 {
       line-height: 1.6rem; }
     .swiper-slide__img {
       margin-bottom: 0;
-      padding-bottom: 0; } }
+      padding-bottom: 0; }
+  .control {
+    padding-top: 0; } }
 
 @media screen and (max-width: 760px) {
   .col {
