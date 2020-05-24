@@ -427,7 +427,7 @@ template {
     min-height: 614px;
     padding: 0 6%; }
   .row_design {
-    min-height: 330px;
+    min-height: 331px;
     padding: 0 6%;
     display: flex;
     justify-content: space-around; }
