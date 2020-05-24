@@ -6,8 +6,8 @@
   list-style: none
   padding: 0
   z-index: 1
-.section--dark img
-  border: 2px solid $dark 
+.projects
+  margin-bottom: 0
 .heading__primary
   color: $primary 
   font-size: 1.92rem
@@ -20,9 +20,11 @@
   &-slide
     display: flex
     flex-wrap: wrap
+    padding-bottom: 2rem
+    margin-bottom: 0
     &__text
       padding-bottom: 2rem
-      flex-basis: 50%
+      flex-basis: 45%
       margin-bottom: 2.42rem
       font-weight: normal
       letter-spacing: -0.09rem
@@ -37,6 +39,10 @@
       text-transform: uppercase
       color: $primary
       margin-bottom: 0.64rem
+    &__img      
+      width: 100%
+      object-fit: cover
+      object-position: center
     &-wrapper
       max-height: 25.32rem
   &-pagination
