@@ -1,13 +1,17 @@
-@media screen and (max-width: 1900px)
+@media screen and (max-width: 2000px)
     .design
         background: linear-gradient(to top, $dark 0%, $dark 430px, $light 430px, $light 100%)
     .footer
         margin: 0
         padding: 0
-        widht: 100%    
+        widht: 100% 
+        background:   
+
         &__container
             margin: 0
             width: 100%
+    
+
 
 @media screen and (max-width: 1450px)
     .container
@@ -84,6 +88,9 @@
             padding: 0 2% 
         &_design
             padding: 0 2%
+    .footer_menu_contacts .contacts_button
+        font-size: 10px    
+        padding: 0.5rem 1rem
 
 
 @media screen and (max-width: 1260px)
@@ -100,7 +107,7 @@
         margin: 0 4%
     .footer     
         &__menu
-            padding-right: 6%
+            padding-right: 0
 
 
 @media screen and (max-width: 1200px)
@@ -112,8 +119,6 @@
     .menu
         margin-left: 3rem
         font-size: 1rem        
-        &_logo
-            margin-right: 
     .hero
         &_instagram
             max-width: 3rem   
@@ -122,6 +127,7 @@
     .contacts
         padding: 0 auto
         &_button
+            margin-left: 0.5rem
             &--primary
                 font-size: 1rem
     .row
@@ -139,7 +145,12 @@
         padding: 0 1%
         &--image
             max-widht: 22rem
-       
+    .footer__menu__contacts
+        margin-right: 0
+    .back-to-top
+        background-size: 100%
+
+              
 
 @media screen and (max-width: 1060px)
     .design
@@ -223,7 +234,6 @@
     
     .container 
         margin: 0 auto 
-        width: 100%
     .nav
         display: none 
     .hero
@@ -250,6 +260,7 @@
         &__down
             margin-right: 0
             padding-right: 0
+         
   
 
     .contacts
@@ -299,12 +310,16 @@
         padding-top: 0   
         margin-top: -2px     
     .video__play
-        max-widht: 55px
+        max-width: 55px
         max-height: 55px
     .footer
         background: $dark
         margin: 0
         padding: 0
+        min-height: 973px
+        padding: 0 5%
+        &__container
+            padding: 0 auto
         &__form
             display: flex
             flex-wrap: wrap
@@ -312,16 +327,46 @@
             width: 100% 
             align-items: center   
         &-wrap
-            widht: 80%  
-            margin: 0 auto           
+            margin: 0 auto 
         &_menu_contacts
-            margin-right: 0 
+            padding-right: 0
             margin-left: 5%
-            
-@media screen and (max-width: 760px)     
-    .back-to-top
-        bottom: 10rem
-         
+            padding-left: 5%
+    .container
+        &--down
+            background: $dark
+    .footer_menu_contacts .contacts_button
+        margin-right: 0
+    .footer
+        background: $dark
+        padding: 0 6%
+        &-wrap
+            background: #252525
+        &__form
+            margin: 0
+            display: flex
+            justify-content: flex-start
+            align-items: flex-start
+        &__input
+            &--group
+                width: 100%
+                padding-bottom: 21px                
+            &::placeholder
+                font-size: 18px
+                font-weight: normal
+        &__button
+            min-width: 340px
+            margin: 0 auto
+        &__policy
+            margin-left: 0
+    .footer h2 
+        margin-bottom: 52px
+    .footer .policy
+        margin-bottom: 27px
+        margin-top: 1.5rem
+
+@media screen and (max-width: 760px)      
+      
     .col
         margin-bottom: 4rem
     .types
@@ -365,14 +410,15 @@
         &__input-group
             flex-basis: 100%
             margin-left: 0
-            margin-bottom: 72px
-      
+            margin-bottom: 72px      
         &__button
-            margin: auto      
+            margin: 0 auto      
             margin-bottom: -6rem
             padding: 1.35rem 38%
+    .ctrl
+        display: flex
+        flex-wrap: wrap
 
-  
       
     .policy
         &__label
@@ -380,17 +426,13 @@
             margin-left: 4px
             margin-top: -7.6rem
             justify-content: flex-start
-        &--center
      
 
-    .ctrl
-        display: flex
-        flex-wrap: wrap
      
 
       
     .video__play
-        max-widht: 37px
+        max-width: 37px
         max-height: 37px
       
     .form
@@ -406,11 +448,17 @@
             flex-direction: column   
             width: 100% 
             align-items: center   
-
-    
+    .back-to-top
+        bottom: 13rem
+    .footer
+        &_down
+            display: none
+        &__input
+            font-size: 15px
+  
 @media screen and (max-width: 570px)
     .back-to-top
-        bottom: 10rem
+        bottom: 6rem
     
     .header        
         min-height: 48px
@@ -471,7 +519,7 @@
     .design .section-title  
         &_about
             font-size: 15px
-            min-widht: 306px
+            min-width: 306px
             width: 80%
             margin: 0 auto
         &_heading            
@@ -481,9 +529,14 @@
     .column-50
         width: 100%
 
-    
-
-       
+    .footer_menu_contacts .contacts_phone
+        margin-right: 2rem
+    .footer
+        width: 100%
+    .container 
+        &--down
+            margin: 0
+            width: 100%
       
 
 
@@ -551,7 +604,38 @@
         &_design
             font-size: 14px
             margin-bottom: 4rem
-   
+    .footer
+        background: #252525
+        padding: 0 1%
+        &-wrap
+            background: #252525
+        &__form
+            margin: 0
+            display: flex
+            justify-content: flex-start
+            align-items: flex-start
+        &__input
+            &--group
+                width: 100%
+                padding-bottom: 21px                
+            &::placeholder
+                font-size: 18px
+                font-weight: normal
+        &__button
+            min-width: 100%
+        &__title
+        &__policy
+            margin-left: 0
+    .footer h2 
+        margin-bottom: 52px
+    .footer .policy
+        margin-bottom: 27px
+        margin-top: 1.5rem
+
+
+
+
+
  
 
 @media screen and (max-height: 500px)
