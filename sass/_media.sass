@@ -1,10 +1,18 @@
 @media screen and (max-width: 1900px)
     .design
         background: linear-gradient(to top, $dark 0%, $dark 430px, $light 430px, $light 100%)
+    .footer
+        margin: 0
+        padding: 0
+        widht: 100%    
+        &__container
+            margin: 0
+            width: 100%
 
 @media screen and (max-width: 1450px)
     .container
         margin: 0 auto
+        padding: 0
     .logo
         margin-right: 5.857rem    
     .nav   
@@ -90,6 +98,9 @@
         margin: 0 4%
     .design_card
         margin: 0 4%
+    .footer     
+        &__menu
+            padding-right: 6%
 
 
 @media screen and (max-width: 1200px)
@@ -204,6 +215,12 @@
             color: $light
 
 @media screen and (max-width: 992px)
+    .back-to-top
+        width: 2.5rem
+        height: 2.5rem
+        background-size: 100%
+        bottom: 10rem
+    
     .container 
         margin: 0 auto 
         width: 100%
@@ -230,6 +247,11 @@
         align-items: center      
         &_logo
             margin-right: 0
+        &__down
+            margin-right: 0
+            padding-right: 0
+  
+
     .contacts
         width: 330px
         margin-right: 5%
@@ -292,9 +314,14 @@
         &-wrap
             widht: 80%  
             margin: 0 auto           
-   
+        &_menu_contacts
+            margin-right: 0 
+            margin-left: 5%
             
-@media screen and (max-width: 760px)          
+@media screen and (max-width: 760px)     
+    .back-to-top
+        bottom: 10rem
+         
     .col
         margin-bottom: 4rem
     .types
@@ -382,6 +409,9 @@
 
     
 @media screen and (max-width: 570px)
+    .back-to-top
+        bottom: 10rem
+    
     .header        
         min-height: 48px
     .menu
@@ -458,7 +488,10 @@
 
 
     
-@media screen and (max-width: 375px)    
+@media screen and (max-width: 375px)   
+    .back-to-top
+        bottom: 10rem
+     
     .header
         display: flex
         justify-content: space-between

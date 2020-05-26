@@ -396,7 +396,7 @@ template {
 .back-to-top {
   position: fixed;
   right: 1.5rem;
-  bottom: 5rem;
+  bottom: 9rem;
   width: 3.5rem;
   height: 3.5rem;
   border-color: transparent;
@@ -410,6 +410,11 @@ template {
   margin: 0 auto;
   width: 100%;
   max-width: 1450px; }
+  .container--down {
+    margin: 0;
+    max-width: 100%;
+    background: #131313 url("../img/footer_bg.jpg") no-repeat center;
+    background-size: cover; }
 
 .block {
   -webkit-animation-name: Show;
@@ -629,6 +634,9 @@ body {
   font-size: 1rem;
   min-width: 375px; }
 
+footer {
+  margin: 0; }
+
 img {
   max-widht: 100%; }
 
@@ -639,7 +647,7 @@ h2 {
   margin-bottom: 2.5rem; }
 
 .next {
-  height: 300px;
+  height: 500px;
   background-color: #fff; }
 
 .section {
@@ -826,11 +834,19 @@ h2 {
 
 @media screen and (max-width: 1900px) {
   .design {
-    background: linear-gradient(to top, #131313 0%, #131313 430px, #fff 430px, #fff 100%); } }
+    background: linear-gradient(to top, #131313 0%, #131313 430px, #fff 430px, #fff 100%); }
+  .footer {
+    margin: 0;
+    padding: 0;
+    widht: 100%; }
+    .footer__container {
+      margin: 0;
+      width: 100%; } }
 
 @media screen and (max-width: 1450px) {
   .container {
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0; }
   .logo {
     margin-right: 5.857rem; }
   .nav {
@@ -906,7 +922,9 @@ h2 {
   .card {
     margin: 0 4%; }
   .design_card {
-    margin: 0 4%; } }
+    margin: 0 4%; }
+  .footer__menu {
+    padding-right: 6%; } }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -1003,6 +1021,11 @@ h2 {
     color: #fff; } }
 
 @media screen and (max-width: 992px) {
+  .back-to-top {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: 100%;
+    bottom: 10rem; }
   .container {
     margin: 0 auto;
     width: 100%; }
@@ -1026,6 +1049,9 @@ h2 {
     align-items: center; }
     .menu_logo {
       margin-right: 0; }
+    .menu__down {
+      margin-right: 0;
+      padding-right: 0; }
   .contacts {
     width: 330px;
     margin-right: 5%;
@@ -1085,9 +1111,14 @@ h2 {
       align-items: center; }
     .footer-wrap {
       widht: 80%;
-      margin: 0 auto; } }
+      margin: 0 auto; }
+    .footer_menu_contacts {
+      margin-right: 0;
+      margin-left: 5%; } }
 
 @media screen and (max-width: 760px) {
+  .back-to-top {
+    bottom: 10rem; }
   .col {
     margin-bottom: 4rem; }
   .types_card {
@@ -1161,6 +1192,8 @@ h2 {
     align-items: center; } }
 
 @media screen and (max-width: 570px) {
+  .back-to-top {
+    bottom: 10rem; }
   .header {
     min-height: 48px; }
   .menu {
@@ -1228,6 +1261,8 @@ h2 {
     width: 100%; } }
 
 @media screen and (max-width: 375px) {
+  .back-to-top {
+    bottom: 10rem; }
   .header {
     display: flex;
     justify-content: space-between;
@@ -1616,8 +1651,8 @@ h2 {
   animation-iteration-count: infinite; }
 
 .swiper-button-next {
-  -webkit-animation-name: heartBeat;
-  animation-name: heartBeat;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-delay: 2s;
@@ -1626,8 +1661,8 @@ h2 {
   animation-iteration-count: infinite; }
 
 .contacts_button {
-  -webkit-animation-name: heartBeat;
-  animation-name: heartBeat;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
   -webkit-animation-duration: 11s;
   animation-duration: 11s;
   -webkit-animation-delay: 10s;
@@ -1636,23 +1671,26 @@ h2 {
   animation-iteration-count: infinite; }
 
 .footer {
-  background-size: cover;
-  margin: 0;
-  padding-top: 3rem; }
+  margin: 0; }
   .footer__container {
-    background: #131313 url("../img/footer_bg.jpg") no-repeat center;
-    background-size: cover;
-    margin: 0 auto;
-    padding-bottom: 3.714rem; }
+    margin: 0;
+    padding-bottom: 3.714rem;
+    height: 1150px;
+    width: 100%; }
   .footer__menu {
-    background-color: #131313;
-    padding: 2.292rem 0; }
+    padding: 1.892rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    min-height: 5.9rem; }
   .footer-wrap {
     background: #181818;
     margin: auto;
     max-width: 63.07rem;
     padding: 2.5rem;
-    margin-top: -20rem; }
+    width: 100%; }
   .footer__title {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
@@ -1689,3 +1727,6 @@ h2 {
 
 .footer .label {
   font-size: 15px; }
+
+.menu__down {
+  margin-right: 0; }
