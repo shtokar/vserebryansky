@@ -23,6 +23,8 @@
     "gulp-sass": "^4.1.0"
   },
   "dependencies": {
-    "sass": "^1.26.5"
+    "animate.css": "^4.1.0",
+    "sass": "^1.26.5",
+    "save": "^2.4.0"
   }
 }
