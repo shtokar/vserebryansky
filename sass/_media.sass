@@ -5,6 +5,14 @@
         margin: 0
         padding: 0
         widht: 100% 
+        background: url('../img/footer-bg.jpg') no-repeat center
+        background-size: cover
+        background-position: 50% 273px
+        &__form
+
+
+
+
         &__container
             margin: 0
             width: 100%
@@ -312,10 +320,9 @@
         max-width: 55px
         max-height: 55px
     .footer
-        background-color: #252525
+        background-color: $dark
         margin: 0
         padding: 0
-        min-height: 1200px
         padding: 0 5%
         &__container
             padding: 0 auto
@@ -324,10 +331,10 @@
             flex-wrap: wrap
             flex-direction: column   
             width: 100% 
-            align-items: center   
+            align-items: center  
+ 
         &-wrap
             margin: 0 2% 
-            background: #252525
             margin-top: 3rem
 
         &_menu_contacts
@@ -336,11 +343,15 @@
             padding-left: 5%
     .container
         &--down
-            background: #252525
+            background: $dark
             width: 100%
     .footer_menu_contacts .contacts_button
         margin-right: 0
     .footer
+        background: url('../img/dark.png') no-repeat center
+        background-position: inherit
+        background-size: cover
+        padding-bottom: 0
         &_down
             display: none
         &__form
@@ -363,10 +374,15 @@
         &__map
             margin: 0 auto
             max-width: 95%
-            margin-bottom: 2rem
-            margin-top: 
+            margin-bottom: 3rem
+            max-height: 30rem
         &__contacts
-            margin-bottom: 
+            margin-top: 2rem
+            max-width: 340px
+        &__contacts-text
+            font-size: 18px
+
+
     .footer h2 
         margin-bottom: 52px
     .footer .policy
@@ -465,13 +481,6 @@
             display: none
         &__input
             font-size: 15px
-    .none1
-        display: none
-        opacity: 0
-    .none2
-        display: flex
-        flex-direction: column
-  
 @media screen and (max-width: 570px)
     .back-to-top
         bottom: 6rem
@@ -552,6 +561,9 @@
         &__button
             margin: 0 5%
             min-width: 90%
+        &__map
+            max-height: 25rem
+            max-width: 350px
 
     .container 
         &--down
@@ -625,10 +637,11 @@
             font-size: 14px
             margin-bottom: 4rem
     .footer
-        background: #252525
+        background: url('../img/dark.png') no-repeat center
+        background-position: inherit
         padding: 0 1%
         &-wrap
-            background: #252525
+            background: $dark
         &__form
             margin: 0
             display: flex
