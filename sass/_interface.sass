@@ -41,6 +41,7 @@
     font-size: 1.285rem
     color: $light
     padding: 0.5rem 0
+    outline-color: transparent
     &::placeholder
         color: $light
  
@@ -48,7 +49,7 @@
     &__checkbox
         opacity: 0
         visibility: hidden
-        &:checked~
+        &:checked +
             .policy__label
                 &::before
                     background: $primary url('../img/modal/check.svg') no-repeat center / 0.8rem      
