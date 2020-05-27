@@ -113,8 +113,29 @@ function backToTop() {
 }
 
 backToTop();
+/*******************************меняет местами блоки********************************/ 
+$(function() {
+  var first = $(".none1");
+  var second = $(".none2");
+  $(window).resize(function() {
+      var i = $(".first, .second").index(first);
+      if ($(window).width() <= "800" && !i) {
+          var a = $("first");
+          a.insertAfter(first);
+          first.insertAfter(second);
+          second.insertAfter(a);
+          a.remove()
+      } else if ($(window).width() > "800" && i) {
+          var a = $("second");
+          a.insertAfter(first);
+          first.insertAfter(second);
+          second.insertAfter(a);
+          a.remove()
+      }
+  }).resize()
+});
 
-*/
+
 /***********************************Функция при нажатии клавиши ************************************ */
 $( document ).ready(function(){
     $( "body" ).click(function(){ // задаем функцию при нажатиии на элемент button

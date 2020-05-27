@@ -8,8 +8,7 @@
         &__container
             margin: 0
             width: 100%
-            &--down
-                background: $light
+    
     
 
 
@@ -313,10 +312,10 @@
         max-width: 55px
         max-height: 55px
     .footer
-        background: $dark
+        background-color: #252525
         margin: 0
         padding: 0
-        min-height: 973px
+        min-height: 1200px
         padding: 0 5%
         &__container
             padding: 0 auto
@@ -327,21 +326,23 @@
             width: 100% 
             align-items: center   
         &-wrap
-            margin: 0 auto 
+            margin: 0 2% 
+            background: #252525
+            margin-top: 3rem
+
         &_menu_contacts
             padding-right: 0
             margin-left: 5%
             padding-left: 5%
     .container
         &--down
-            background: $dark
+            background: #252525
+            width: 100%
     .footer_menu_contacts .contacts_button
         margin-right: 0
     .footer
-        background: $dark
-        padding: 0 6%
-        &-wrap
-            background: #252525
+        &_down
+            display: none
         &__form
             margin: 0
             display: flex
@@ -359,11 +360,19 @@
             margin: 0 auto
         &__policy
             margin-left: 0
+        &__map
+            margin: 0 auto
+            max-width: 95%
+            margin-bottom: 2rem
+            margin-top: 
+        &__contacts
+            margin-bottom: 
     .footer h2 
         margin-bottom: 52px
     .footer .policy
         margin-bottom: 27px
         margin-top: 1.5rem
+
     
 
 @media screen and (max-width: 760px)      
@@ -456,6 +465,12 @@
             display: none
         &__input
             font-size: 15px
+    .none1
+        display: none
+        opacity: 0
+    .none2
+        display: flex
+        flex-direction: column
   
 @media screen and (max-width: 570px)
     .back-to-top
@@ -534,6 +549,10 @@
         margin-right: 2rem
     .footer
         width: 100%
+        &__button
+            margin: 0 5%
+            min-width: 90%
+
     .container 
         &--down
             margin: 0
@@ -623,7 +642,8 @@
                 font-size: 18px
                 font-weight: normal
         &__button
-            min-width: 100%
+            min-width: 95%
+            margin: 0 auto
         &__title
         &__policy
             margin-left: 0
