@@ -9,8 +9,8 @@
     &__container
         margin: 0
         width: 100%
-        padding-bottom: 2rem
-        min-height: 1200px
+        padding-bottom: rem
+        min-height: 1190px
     &__menu
         padding: 1.892rem 0
         display: flex
@@ -66,23 +66,21 @@
         background: $dark
         width: 100%
 .footer__input-group--fullWidth
-    width: 100%
+    flex-basis: 100%
 
 .footer .label
     font-size: 15px
-.map--first
-    display: none
 .footer
     &__map
         margin: 0 auto
         max-width: 66.07rem
-        margin-bottom: 6rem
-        height: 465px
+        height: 33.214rem
     &__contacts
         display: flex
         flex-direction: column
         align-items: center
         justify-content: center
+        font-weight: 500
     &__contacts-text
         text-transform: uppercase
         color: $primary
@@ -105,3 +103,8 @@
             margin: 0
             padding: 0
             cursor: pointer
+    &__phone
+        text-decoration: none
+        color: $primary
+        &:hover
+            color: $light

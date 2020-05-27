@@ -377,12 +377,12 @@
             margin-bottom: 3rem
             max-height: 30rem
         &__contacts
-            margin-top: 2rem
             max-width: 340px
-        &__contacts-text
+            margin: 0 auto
             font-size: 18px
-
-
+            padding: 2rem 1rem 1rem 1rem
+        &__sm
+            padding-bottom: 0
     .footer h2 
         margin-bottom: 52px
     .footer .policy
@@ -391,8 +391,7 @@
 
     
 
-@media screen and (max-width: 760px)      
-      
+@media screen and (max-width: 760px)            
     .col
         margin-bottom: 4rem
     .types
@@ -401,7 +400,6 @@
     .design   
         &_card
             margin-bottom: 4.2rem
-
     .card
         &--text
             margin-left: 0
@@ -452,11 +450,7 @@
             margin-left: 4px
             margin-top: -7.6rem
             justify-content: flex-start
-     
-
-     
-
-      
+          
     .video__play
         max-width: 37px
         max-height: 37px
@@ -637,9 +631,12 @@
             font-size: 14px
             margin-bottom: 4rem
     .footer
-        background: url('../img/dark.png') no-repeat center
+        background: $dark 
         background-position: inherit
         padding: 0 1%
+        &__container
+            max-height: 
+            padding: 0 auto
         &-wrap
             background: $dark
         &__form
@@ -660,6 +657,13 @@
         &__title
         &__policy
             margin-left: 0
+        &__map
+            max-width: 90%
+            padding: 0 3%
+        &__contacts
+            padding-bottom: 0
+            max-height: 166px
+        &__sm
     .footer h2 
         margin-bottom: 52px
     .footer .policy

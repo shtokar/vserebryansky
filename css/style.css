@@ -1183,10 +1183,12 @@ h2 {
       margin-bottom: 3rem;
       max-height: 30rem; }
     .footer__contacts {
-      margin-top: 2rem;
-      max-width: 340px; }
-    .footer__contacts-text {
-      font-size: 18px; }
+      max-width: 340px;
+      margin: 0 auto;
+      font-size: 18px;
+      padding: 2rem 1rem 1rem 1rem; }
+    .footer__sm {
+      padding-bottom: 0; }
   .footer h2 {
     margin-bottom: 52px; }
   .footer .policy {
@@ -1414,9 +1416,11 @@ h2 {
       font-size: 14px;
       margin-bottom: 4rem; }
   .footer {
-    background: url("../img/dark.png") no-repeat center;
+    background: #131313;
     background-position: inherit;
     padding: 0 1%; }
+    .footer__container {
+      padding: 0 auto; }
     .footer-wrap {
       background: #131313; }
     .footer__form {
@@ -1447,6 +1451,12 @@ h2 {
       margin: 0 auto; }
     .footer__policy {
       margin-left: 0; }
+    .footer__map {
+      max-width: 90%;
+      padding: 0 3%; }
+    .footer__contacts {
+      padding-bottom: 0;
+      max-height: 166px; }
   .footer h2 {
     margin-bottom: 52px; }
   .footer .policy {
@@ -1817,8 +1827,8 @@ h2 {
   .footer__container {
     margin: 0;
     width: 100%;
-    padding-bottom: 2rem;
-    min-height: 1200px; }
+    padding-bottom: rem;
+    min-height: 1190px; }
   .footer__menu {
     padding: 1.892rem 0;
     display: flex;
@@ -1872,25 +1882,22 @@ h2 {
     width: 100%; }
 
 .footer__input-group--fullWidth {
-  width: 100%; }
+  flex-basis: 100%; }
 
 .footer .label {
   font-size: 15px; }
 
-.map--first {
-  display: none; }
-
 .footer__map {
   margin: 0 auto;
   max-width: 66.07rem;
-  margin-bottom: 6rem;
-  height: 465px; }
+  height: 33.214rem; }
 
 .footer__contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  font-weight: 500; }
 
 .footer__contacts-text {
   text-transform: uppercase;
@@ -1915,3 +1922,9 @@ h2 {
     margin: 0;
     padding: 0;
     cursor: pointer; }
+
+.footer__phone {
+  text-decoration: none;
+  color: #e3b873; }
+  .footer__phone:hover {
+    color: #fff; }
