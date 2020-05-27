@@ -48,7 +48,7 @@
     &__checkbox
         opacity: 0
         visibility: hidden
-        &:checked ~ 
+        &:checked~
             .policy__label
                 &::before
                     background: $primary url('../img/modal/check.svg') no-repeat center / 0.8rem      
@@ -81,7 +81,14 @@
     display: none
     z-index: 2
     
+label
+    &.invalid
+        color: red
 
+
+input
+    &.invalid
+        border-bottom: 1px solid red
         
         
         

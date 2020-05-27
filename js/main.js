@@ -167,8 +167,8 @@ $(document).ready(function () {
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
-  next.css('left', prev.width()+ 10 + bullets.width() + 10)
-  bullets.css('left', prev.width() + 10)
+  next.css('left', prev.width()+ 10 + bullets.width() + 10);
+  bullets.css('left', prev.width() + 10);
   
   
     /*****************************************************************/
@@ -181,19 +181,181 @@ $(document).ready(function () {
             } else {
                 button.fadeOut();
             }
-        });
+        }),
     
         button.on('click', (e) => {
             e.preventDefault();
             $('html').animate({scrollTop: 0}, 1000);
-        })
+        });
     }
     
     backToTop();
     new WOW().init();
-  
+
 });
 
 
   
-  
+  /*************************************************************************************/
+  $('.modal__form').validate({
+    errorClass: 'invalid',
+    rules: {
+      modalName: {
+        required: true,
+        minlength: 2
+      },
+      modalPhone: {
+        required: true,
+        minlength: 13
+      },
+      modalCheckbox: 'required',
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      modalName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче 2 букв"
+      },
+      modalPhone: "Телефон обязателен",
+      modalCheckbox: 'Требуется Ваше согласие',
+      modalEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате name@domain.ru"
+      },
+    },/*
+   submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: 'sendEmail.php',
+        data: $(form).serialize(),
+        success: function (response) {
+
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+          modalSuccess.toggleClass('modal-success--visible');
+        }
+      });
+    },
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+        return element.next('label').append(error);
+      }
+
+      error.insertAfter($(element));
+    }*/
+  });
+
+  // Control form
+  $('.control__form').validate({
+    errorClass: 'invalid',
+    rules: {
+      controlName: {
+        required: true,
+        minlength: 2
+      },
+      controlPhone: {
+        required: true,
+        minlength: 13
+      },
+      controlCheckbox: 'required',
+    },
+    messages: {
+      controlName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче 2 символов"
+      },
+      controlCheckbox: 'Требуется Ваше согласие',
+
+      controlPhone: "Телефон обязателен"
+    },/*
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: 'sendEmail.php',
+        data: $(form).serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+          modalSuccess.toggleClass('modal-success--visible');
+        }
+      });
+    },
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+        return element.next('label').append(error);
+      }
+
+      error.insertAfter($(element));
+    }*/
+  });
+  // Footer form
+  $('.footer__form').validate({
+    errorClass: 'invalid',
+    rules: {
+      footerName: {
+        required: true,
+        minlength: 2
+      },
+      footerPhone: {
+        required: true,
+        minlength: 13
+      },
+      footerCheckbox: 'required',
+      footerQuestion: {
+        required: true,
+        minlength: 10
+      }
+    },
+    messages: {
+      footerName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче 2 символов"
+      },
+      footerQuestion: {
+        required: "Задайте Ваш вопрос",
+        minlength: "Вопрос должен содержать минимум 10 символов"
+      },
+      footerPhone: "Телефон обязателен",
+      footerCheckbox: 'Требуется Ваше согласие'
+    },/*
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: 'sendEmail.php',
+        data: $(form).serialize(),
+        success: function (response) {
+
+
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+          modalSuccess.toggleClass('modal-success--visible');
+        }
+      });
+    },
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+        return element.next('label').append(error);
+      }
+
+      error.insertAfter($(element));
+    }*/
+  });
+  // Phone mask
+  $('[type=tel]').mask('+7(000) 000 00 00', {
+    placeholder: /*Ваш номер телефона:*/"+7 (___) __ __ ___"
+  });
+/*
+  let footer = $('.footer');
+  let footerTop = footer.offset().top;
+  $(window).bind('scroll', function() {
+    let windowTop = $(this).scrollTop();
+    if (windowTop > footerTop) {
+      $('.map').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acff5477968c4f3e81b2f478b3b018b2a51eba70bbfc3045781c2b9301889aae2&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script>');
+      $(window).unbind('scroll');
+    }
+  })
+});
+*/
