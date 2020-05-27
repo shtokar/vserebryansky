@@ -235,6 +235,7 @@ $(document).ready(function () {
         email: true
       }
     },
+    errorElement: "div",
     messages: {
       modalName: {
         required: "Имя обязательно",
@@ -283,6 +284,7 @@ $(document).ready(function () {
       },
       controlCheckbox: 'required',
     },
+    errorElement: "div",
     messages: {
       controlName: {
         required: "Имя обязательно",
@@ -330,6 +332,7 @@ $(document).ready(function () {
         minlength: 10
       }
     },
+    errorElement: "div",
     messages: {
       footerName: {
         required: "Имя обязательно",
