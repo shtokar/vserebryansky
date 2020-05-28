@@ -1928,3 +1928,29 @@ h2 {
   color: #e3b873; }
   .footer__phone:hover {
     color: #fff; }
+
+.thanks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #131313 url("../img/hero.jpg") no-repeat center/cover;
+  min-height: 100vh;
+  overflow: hidden; }
+  .thanks__contant {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%; }
+  .thanks__title {
+    font-size: 3rem;
+    font-family: 'Futura Demi', cursive;
+    color: #fff;
+    font-weight: normal; }
+
+.back-main {
+  align-self: flex-end;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e3b873;
+  text-decoration: none; }
+  .back-main:hover {
+    font-size: 2.1rem; }
