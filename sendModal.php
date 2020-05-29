@@ -10,6 +10,7 @@ require 'phpMailer/Exception.php';
 require 'phpMailer/PHPMailer.php';
 require 'phpMailer/SMTP.php';
 
+
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 
@@ -22,7 +23,7 @@ try {
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'shtokar1987@gmail.com';                     // SMTP username
     $mail->Password   = 'differencial1987';                               // SMTP password
-    $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+    $mail->SMTPSecure = 'ssl';        // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
@@ -40,6 +41,7 @@ try {
     if($mail->send())
     {
         $new_url = 'thanks.html';
+        echo"<script>$(form)[0].reset();</script>";
         echo "<script>document.location.href='$new_url';</script>";
 
     }else{

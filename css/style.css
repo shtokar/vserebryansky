@@ -1544,6 +1544,61 @@ h2 {
     width: 15.6rem;
     height: 3.642rem; }
 
+/**********************************************/
+.modal-thanks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36.14rem;
+  height: 36.35rem;
+  position: relative;
+  padding: 2.35rem 3.5rem 1.93rem;
+  background: #131313;
+  color: #e3b873;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.2;
+  text-align: center; }
+  .modal-thanks__button {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #e3b873;
+    border: 0;
+    outline: none; }
+    .modal-thanks__button::after {
+      content: '';
+      display: inline-block;
+      width: 0.3px;
+      height: 2rem;
+      background-color: #131313;
+      transform: rotate(-45deg); }
+    .modal-thanks__button::before {
+      content: "";
+      display: inline-block;
+      width: 0.3px;
+      height: 2rem;
+      background-color: #131313;
+      transform: rotate(45deg); }
+  .modal-thanks-wrap {
+    visibility: hidden;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(19, 19, 19, 0.9); }
+    .modal-thanks-wrap_visible {
+      visibility: visible; }
+
 .types {
   padding: 0;
   background-color: #fff; }
@@ -1933,7 +1988,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #131313 url("../img/hero.jpg") no-repeat center/cover;
+  background: #131313;
   min-height: 100vh;
   overflow: hidden; }
   .thanks__contant {
