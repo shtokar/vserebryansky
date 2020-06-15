@@ -2003,6 +2003,18 @@ h2 {
   .footer__phone:hover {
     color: #fff; }
 
+.footer__nav {
+  background-color: #131313;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px auto; }
+
 .thanks {
   display: flex;
   justify-content: center;
