@@ -1,4 +1,3 @@
-
 /*document.addEventListener("DOMContentLoaded", function (event) {
     const modal = document.querySelector('.modal');//обращение к модальному окну
     const modalBtn = document.querySelectorAll('[data-toggle=modal]');//кнопка для вызова модального окна
@@ -6,7 +5,6 @@
     const switchModal = () => {//функция вкл выкл модального окна
         modal.classList.toggle('modal--visible');
     }
-
     modalBtn.forEach(element => {//скрипт переборки массива объектов
         element.addEventListener('click', switchModal);//слушатель события
             modal.classList.toggle('modal--visible');//вкл выкл модального окна
@@ -18,7 +16,6 @@
         }
     
   
-
   
     })
 });
@@ -28,24 +25,18 @@
     var modal_close = document.getElementsById('modal_close');
         if (evt.keyCode == 27){
         modal_close.style.box-suppress = 'hide';
-
-
-
     }
 }
-
 /****************************************************************************************** *********************
 document.addEventListener('keypress', function (e) {
     if(e.keyCode === 27) document.getElementById('modal_id').hidden = 1;
   })
 $('#modal_id').modal({ backdrop: 'static', keyboard: false });
-
 /********************************JQuery-code********************************************************* */
 /*(document).ready(function () {//
     var modal = $('.modal'),//
         modalBtn = $('[data-toggle=modal]'),//
         closeBtn = $('.modal_close');//
-
     modalBtn.on('click', function () {//
         modal.toggleClass('modal--visible');//
     });
@@ -62,7 +53,6 @@ $(document).ready(function () {
     var modal = $('.modal'),
         modalBtn = $('[data-toggle=modal]'),
         closeBtn = $('.modal__close');
-
     modalBtn.on('click', function () {
         modal.toggleClass('modal--visible');
     });
@@ -85,11 +75,9 @@ $(document).ready(function () {
             prevEl: '.swiper-button-prev',
         },
     })
-
     var next = $('.swiper-button-next');
     var prev = $('.swiper-button-prev');
     var bullets = $('.swiper-pagination');
-
     next.css('left', prev.width() + 20 + bullets.width() + 20)
     bullets.css('left', prev.width() + 20)
     
@@ -97,7 +85,6 @@ $(document).ready(function () {
 /*************
 function backToTop() {
     let button = $('.back-to-top');
-
     $(window).on('scroll', () => {
         if ($(this).scrollTop() >= 50) {
             button.fadeIn();
@@ -105,13 +92,11 @@ function backToTop() {
             button.fadeOut();
         }
     });
-
     button.on('click', (e) => {
         e.preventDefault();
         $('html').animate({scrollTop: 0}, 1000);
     })
 }
-
 backToTop();
 /*******************************меняет местами блоки*********************************
 $(function() {
@@ -182,6 +167,9 @@ $(document).ready(function () {
     $(document).on('click', function (e) {
         if (modal.is(e.target))
             modal.toggleClass('modal--visible');
+            /***************************************/
+            
+            /************************************* */
     });
 
     /********************************************************************* */
@@ -261,19 +249,24 @@ $(document).ready(function () {
         email: "Введите в формате name@domain.ru"
       },
     },
-  /* submitHandler: function (form) {
+  submitHandler: function (form) {
       $.ajax({
         type: "POST",
         url: 'sendModal.php',
         data: $(form).serialize(),
-        success: function (response) {
-         console.log('ajax сработал!!!!');
+        success: function (response) {  
+        alert('Заявка отправлена, мы свяжемся с вами в ближайшее время');
           $(form)[0].reset();
-         var modal1 = $('.modal');
-          modal1.removeClass('modal--visible');
-        $('modal-thanks-wrap').toggleClass('modal-thanks-wrap_visible');
-          alert('Заявка отправлена, мы свяжемся с вами в ближайшее время');
 
+      // $('.modal-thanks-wrap').toggleClass('.modal-thanks-wrap--visible');
+       $('.modal').click();
+          
+
+       //   $('.modal').close();
+        // modal.removeClass('modal--visible');
+      //    $('modal-thanks-wrap').success(hide);
+         // $('.modal').close();
+          
         },
      });
     },
@@ -281,9 +274,8 @@ $(document).ready(function () {
       if (element.attr("type") == "checkbox") {
         return element.next('div').append(error);
       }
-
       error.insertAfter($(element));
-    }*/
+    }
   });
   // Control form
   $('.control__form').validate({
@@ -309,13 +301,15 @@ $(document).ready(function () {
 
       controlPhone: "Телефон обязателен"
     },
-    submitHandler: function (form) {
+  submitHandler: function (form) {
       $.ajax({
         type: "POST",
         url: 'sendControl.php',
         data: $(form).serialize(),
         success: function (response) {
           $(form)[0].reset();
+         // $('.modal-thanks-wrap--visible').fadeIn();
+          /******************************************/
           alert('Заявка отправлена, мы свяжемся с вами в ближайшее время');
 
         }
@@ -367,9 +361,9 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
 
-
-          $(form)[0].reset();
-          alert('Заявка отправлена, мы свяжемся с вами в ближайшее время');
+         // ('modal-thanks').toggleClass('modal-thanks--visible');
+        $(form)[0].reset();
+        alert('Заявка отправлена, мы свяжемся с вами в ближайшее время');
         }
       });
     },
@@ -385,3 +379,4 @@ $(document).ready(function () {
   $('[type=tel]').mask('+7(000) 000 00 00', {
     placeholder: "+7 (___) __ __ ___"
   });
+

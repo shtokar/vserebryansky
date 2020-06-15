@@ -17,16 +17,16 @@ try {
     $mail->CharSet = "UTF-8";
     $mail->SMTPDebug = 0;                      // Enable verbose debug output
     $mail->isSMTP();                                            // Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+    $mail->Host       = 'smtp.mail.ru';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'shtokar1987@gmail.com';                     // SMTP username
-    $mail->Password   = 'differencial1987';                               // SMTP password
-    $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    $mail->Username   = 'shtokar@mail.ru';                     // SMTP username
+    $mail->Password   = '1912tva';                               // SMTP password
+    $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+    $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('shtokar1987@gmail.com', 'Repair Design');
-    $mail->addAddress('shtokar@mail.ru');     // Add a recipient      
+    $mail->setFrom('shtokar@mail.ru', 'Repair Design');
+    $mail->addAddress('shtokar1987@gmail.com');     // Add a recipient      
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
@@ -36,8 +36,9 @@ try {
     Телефон: ${controlPhone}";
 
     if($mail->send())
-    {
-        $new_url = 'thanks.html';
+    {         
+        $new_url = '.modal-thanks-wrap--visible';
+     //   $new_url = 'thanks.html';
         echo "<script>document.location.href='$new_url';</script>";
 
     }else{

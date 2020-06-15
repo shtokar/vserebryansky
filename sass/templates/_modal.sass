@@ -45,9 +45,10 @@
     &__form
         display: flex
         flex-direction: column
-        outline: none
     &__input
         margin-bottom: 3.428rem
+        background-color: $dark
+        color: $light
         &--group
             display: flex
             flex-direction: column
@@ -61,45 +62,28 @@
         align-self: flex-end
         width: 15.6rem
         height: 3.642rem
+.modal-dialog-close
+    background: $dark url('../img/modal/bg-modal.svg') no-repeat center
+    color: $light
+    &--title
+        display: none
+
 /**********************************************/
 .modal
     &-thanks
-        display: flex
-        justify-content: center
-        align-items: center
-        width: 36.14rem
-        height: 36.35rem
-        position: relative
-        padding: 2.35rem 3.5rem 1.93rem
-        background: $dark
-        color: $primary
-        font-size: 2.5rem
-        letter-spacing: 0.1rem
-        line-height: 1.2
-        text-align: center
-        &__button
-            position: absolute
-            top: 1rem
-            right: 2rem
-            width: 2.5rem
-            height: 2.5rem
-            background: $primary
-            border: 0
-            outline: none
-            &::after
-                content: ''
-                display: inline-block
-                width: 0.3px
-                height: 2rem
-                background-color: $dark
-                transform: rotate(-45deg)
-            &::before
-                content: ""
-                display: inline-block
-                width: 0.3px
-                height: 2rem
-                background-color: $dark
-                transform: rotate(45deg)  
+        &__content
+            display: flex
+            justify-content: center
+            align-items: center
+            max-width: 25rem
+            position: relative
+            padding: 2.35rem 3.5rem 1.93rem
+            background: $dark
+            color: $light
+            font-size: 2rem
+            letter-spacing: 0.1rem
+            line-height: 1.2
+            text-align: center
         &-wrap
             visibility: hidden
             position: fixed
@@ -113,9 +97,41 @@
             display: flex
             justify-content: center
             align-items: center
-            background: rgba($dark, 0.9)
-            &_visible
+            background: rgba($dark, 0.95)
+            &--visible
                 visibility: visible  
-
-
-        
+                position: fixed
+                z-index: 4
+                left: 0
+                right: 0
+                top: 0
+                bottom: 0
+                width: 100%
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                background: rgba($dark, 0.95)
+        &__button
+            position: absolute
+            top: 1rem
+            right: 2rem
+            width: 2.5rem
+            height: 2.5rem
+            background: $primary
+            border: 0
+            outline: none
+            ::after
+                content: ''
+                display: inline-block
+                width: 0.3px
+                height: 2rem
+                background-color: $dark
+                transform: rotate(-45deg)
+            &::before
+                content: ""
+                display: inline-block
+                width: 0.3px
+                height: 2rem
+                background-color: $dark
+                transform: rotate(45deg)  

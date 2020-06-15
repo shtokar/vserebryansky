@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/smoke-pure.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet"> 
     <title>Design Project</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="main">
         <div class="container">
         <!---------------------------menu-------------------------------------------------------->
             <div class="menu">
-                <div class="logo menu_logo wow jackInTheBox" data-wow-delay="1s">Repair Design Project</div>
+                <div class="logo menu_logo  wow jackInTheBox" data-wow-delay="1"><a class="logo_link" href="index.html">Repair Design Project</a></div>
                 <nav class="nav menu_nav>">
-                    <a href="#" class="nav_item nav_item_one">Главная</a>
-                    <a href="#" class="nav_item">Проекты</a>
-                    <a href="#" class="nav_item">Замер</a>
+                    <a href="#main" class="nav_item nav_item_one">Главная</a>
+                    <a href="#projects" class="nav_item">Проекты</a>
+                    <a href="#sector_1" class="nav_item">Замер</a>
                     <a href="#" class="nav_item">Команда</a>
-                    <a href="#" class="nav_item">Контакты</a>                    
+                    <a href="#contacts" class="nav_item">Контакты</a>                    
                 </nav>
                 <div class="contacts menu_contacts">
                     <a href="tel:+79997683299" class="phone contacts_phone">+7 (999) 768-32-99</a>
@@ -30,25 +31,25 @@
         </div>
         <!---------------/.menu------------------------------------------------------------->
     </header>
-    <a href="#sectorMain" class="back-to-top" style="display: inline;"></a>
+    <a href="#" class="back-to-top" style="display: inline;"></a>
     <main>      
         <section class="hero">
             <div class="instagram hero_instagram">
-                <a href="#" class="instagram_link">Instagram</a>
+                <a href="instagram.com" class="instagram_link">Instagram</a>
             </div>
             <div class="container">
                 <div class="hero_content wow fadeInLeft">
-                    <h1 class="title hero_title" id="sectorMain">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на Дону</span></h1>
+                    <h1 class="title hero_title">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на Дону</span></h1>
                         <p class="hero_text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
                         <button class="button hero_button button--primary" data-toggle="modal">Рассчитать стоимость</button>
-                        <button class="button hero_button button--outline">Отправить заявку</button>    
+                        <button class="button hero_button button--outline" data-toggle="modal">Отправить заявку</button>    
                 </div>
             </div>            
             <!------------------------/container-------------------------------------------->
             <a href="#sector_1" class="hero_scroll-down">листайте вниз</a>
         </section>
         <!---------------------------/hero-------------------------------------------------->
-        <section class="section section--dark projects">
+        <section class="section section--dark projects" id="projects">
             <div class="container">      
                 <div class="projects_row">
                     <div class="column-50"> 
@@ -176,8 +177,8 @@
                     <div class="ctrl">
                        <button class="button button--primary control__button">отправить </button>
                         <div class="policy control__policy">
-                            <input type="checkbox" name="controlCheckbox" id="control--checkbox" class="policy__checkbox" checked>
-                            <label for="control--checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
+                            <input type="checkbox" name="controlCheckbox" id="controlCheckbox" class="policy__checkbox controlCheckbox" checked>
+                            <label for="controlCheckbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
                         </div>
                     </div>
                 </form>
@@ -330,11 +331,6 @@
             </div>
         </section>
         <!----------------------------------------------/design------------------------------------------------------>
-        <section class="next">
-            <div class="container">
-                <div class=""></div>
-            </div>
-        </section>
     </main>
     <footer class="footer section--dark">
         <div class="container container--down">
@@ -355,7 +351,7 @@
                             <input type="text" name="footerQuestion" class="input form__input footer__input" id="user-question" placeholder="Я хочу спросить:">
                         </div>                  
                         <div class="policy footer__policy">
-                            <input type="checkbox" name="footerCheckbox" id="footer--checkbox" class="policy__checkbox" checked>
+                            <input type="checkbox" name="footerCheckbox" id="footer--checkbox" class="policy__checkbox footerCheckbox" checked>
                             <label for="footer--checkbox" class="policy__label policy__label--center">я соглашаюсь с обработкой данных</label>
                         </div>
                         <!-- /.policy -->
@@ -363,7 +359,7 @@
                     </form>
     
                 </div>
-                <div class="footer__contacts none1">
+                <div class="footer__contacts none1" id="contacts">
                     <strong class="footer__contacts-text">
                       Ростов на дону, Торговый центр Plaza Прямой телефон 
                       <a href="tel:+79997683299" class="footer__phone">+7(999)&nbsp; 768-32-99</a>
@@ -374,7 +370,8 @@
                     </div>
                 </div>
                 <div class="map footer__map none2">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adce4eaf6c47873a4962de1634d6971ab91b40831a2becf17e35ad65500e7740b&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                   <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adce4eaf6c47873a4962de1634d6971ab91b40831a2becf17e35ad65500e7740b&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d173294.15219139238!2d39.4879173!3d47.2611562!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47adab683%3A0xc1e6a0b74b2f30ab!2z0YPQuy4g0J3QsNC90YHQtdC90LAsIDIzOSwg0KDQvtGB0YLQvtCyLdC90LAt0JTQvtC90YMsINCg0L7RgdGC0L7QstGB0LrQsNGPINC-0LHQuy4sIDM0NDAzOA!5e0!3m2!1sru!2sru!4v1590832877314!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
         </div>
@@ -384,9 +381,9 @@
         <div class="footer_down">
             <div class="footer__menu">
                 <div class="menu menu__down">
-                    <div class="logo menu_logo">Repair Design Project</div>
+                    <div class="logo menu_logo"><a class="logo_link" href="index.html">Repair Design Project</a></div>
                     <nav class="nav menu_nav>">
-                        <a href="#" class="nav_item nav_item_one">Главная</a>
+                        <a href="index.html" class="nav_item nav_item_one">Главная</a>
                         <a href="#" class="nav_item">Проекты</a>
                         <a href="#" class="nav_item">Замер</a>
                         <a href="#" class="nav_item">Команда</a>
@@ -403,9 +400,10 @@
 
     </footer>
     <div class="modal" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-        <div class="modal__dialog">
+        <div class="modal__dialog modal-dialog-close">
             <button class="modal__close"></button>
             <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
+            <h3 class="modal-dialog-close--title">Ваша заявка принята.<br> Наш менеджер свяжется с вами в ближайшее время.</h3>
             <form action="sendModal.php" metod="POST" class="form modal__form">
                 <div class="input__group modal__input--group">
                     <label for="user-name" class="label form__label label--light">Имя</label>
@@ -420,7 +418,7 @@
                     <input type="email" name="modalEmail" class="input form__input modal__input" id="user-email" placeholder="Ваш email:">
                 </div>                          
                 <div class="policy modal__policy">
-                    <input type="checkbox" name="modalCheckbox" id="modal--checkbox" class="policy__checkbox" checked>
+                    <input type="checkbox" name="modalCheckbox" id="modal--checkbox" class="policy__checkbox modalCheckbox" checked>
                     <label for="modal--checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
                 </div>
                 <!-- /.policy -->
@@ -431,9 +429,9 @@
         <!-- /.modal__dialog -->
     </div>
       <!-----------------------------------------modalWindowForCloseForm----------------------------------->
-    <div class="modal-thanks-wrap ">
-        <div class="modal-thanks">
-            <button class="modal-thanks__button" type="button"></button>
+    <div class="modal-thanks-wrap" id="modalThanks" data-keyboard="false">
+        <div class="modal-thanks__content">
+        <!--    <button class="modal-thanks__button" type="button"></button>-->
             <h3 class="modal-thanks__title">
             Ваша заявка принята.<br> Наш менеджер свяжется с вами в ближайшее время.
             </h3>
